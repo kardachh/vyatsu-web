@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.tippy-box[data-theme~='custom-white'] {
+    background-color: white;
+}
+
+.tippy-box[data-theme~='custom-white'][data-placement^='bottom'] > .tippy-arrow::before {
+    border-bottom-color: white;
+}

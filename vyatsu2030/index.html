@@ -5,7 +5,11 @@
     <title>Программа развития ВятГУ «Приоритет 2030»</title>
     <link href="../output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <!--  slider  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <!--  popup  -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
 </head>
 <body class="font-sans text-[#383a3f]">
 <header class="fixed top-0 left-0 bg-white shadow-md w-full h-24 text-black z-30">
@@ -23,22 +27,22 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#" class="hover:text-red-600">
                         Проекты и политики
                     </a>
                 </li>
-                <li>
-                    <a href="#">
+                <li class="nav__link-with-popup">
+                    <a href="#" class="hover:text-red-600">
                         Стратегические проекты
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#" class="hover:text-red-600">
                         Новости
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#" class="hover:text-red-600">
                         Дирекция
                     </a>
                 </li>
@@ -558,6 +562,7 @@
 <script>
 
     const addEvents = () => {
+        console.log(`addEvents()`)
         // toggle description to cards
         // document.querySelectorAll('.card')
         Array.from(document.querySelectorAll('.card')).forEach(el => {
@@ -574,35 +579,63 @@
                 })
             });
         })
+
+        // slider for block #10
+        let sliderLider = tns({
+            container: '#sliderLider',
+            slideBy: 'page',
+            "swipeAngle": false,
+            "gutter": 30,
+            autoplay: true,
+            autoplayButtonOutput: false,
+            speed: 750,
+            nav: false,
+            autoplayButton: false,
+            controlsContainer: "#controls-lider",
+            edgePadding: 0,
+            items: 1,
+            loop: true,
+            responsive: {
+                640: {
+                    items: 2
+                },
+                768: {
+                    items: 3
+                },
+                1024: {
+                    items: 4
+                }
+            }
+        });
+
+        // tippy for "Стратегические проекты" links menu
+        // nav__link-with-popup
+        tippy('.nav__link-with-popup',{
+            theme: 'custom-white',
+            allowHTML: true,
+            interactive: true,
+            // offset:[0,40],
+            content: `
+                <div class="bg-white text-black normal-case text-center">
+                    <ul class="space-y-5">
+                        <li>
+                            <a href="./projects/tehnologii-zdorovya">Технологии<br>здоровья</a>
+                        </li>
+                        <li>
+                            <a href="./projects/#">Среда<br>обитания</a>
+                        </li>
+                        <li>
+                            <a href="./projects/#">Гармоничная<br>личность</a>
+                        </li>
+                    </ul>
+                </div>
+            `
+        })
     }
 
-    addEvents()
 
-    let sliderLider = tns({
-        container: '#sliderLider',
-        slideBy: 'page',
-        "swipeAngle": false,
-        "gutter": 30,
-        autoplay: true,
-        autoplayButtonOutput: false,
-        speed: 750,
-        nav: false,
-        autoplayButton: false,
-        controlsContainer: "#controls-lider",
-        edgePadding: 0,
-        items: 1,
-        loop: true,
-        responsive: {
-            640: {
-                items: 2
-            },
-            768: {
-                items: 3
-            },
-            1024: {
-                items: 4
-            }
-        }
-    });
+
+    window.onload = addEvents
+
 </script>
 </html>
