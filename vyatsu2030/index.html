@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <title>Программа развития ВятГУ «Приоритет 2030»</title>
     <link href="../output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 </head>
 <body class="font-sans text-[#383a3f]">
 <header class="fixed top-0 left-0 bg-white shadow-md w-full h-24 text-black z-30">
     <div class="w-full max-w-[1200px] h-full flex justify-center xl:justify-between items-center mx-auto ">
         <!--            logo-->
-        <a class="">
+        <a href="#" class="">
             <img src="./img/logo.svg" alt="logo" class="w-full max-w-[300px] h-auto">
         </a>
         <!--            nav-->
         <nav class="hidden xl:block">
             <ul class="flex space-x-5 uppercase text-[13px] font-bold tracking-[1.92px]">
                 <li>
-                    <a href="#">
+                    <a href="#" class="hover:text-red-600">
                         О программе
                     </a>
                 </li>
@@ -56,17 +58,15 @@
         <!--    hidden -> flex    -->
         <div class="hidden absolute w-full h-full justify-center overflow-hidden">
             <!--  video iframe-->
-            <!--            <iframe-->
-            <!--                    class=""-->
-            <!--                    src="https://www.youtube.com/embed/HXZRLwVQDEk?si=Q2jqKFmZp0e8VYvy&amp;controls=0&autoplay=1&showinfo=0&rel=0&loop=1"-->
-            <!--                    title="YouTube video player" frameborder="0"-->
-            <!--                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"-->
-            <!--                    allowfullscreen>-->
-            <!--            </iframe>-->
+<!--            <iframe-->
+<!--                    class=""-->
+<!--                    src="https://www.youtube.com/embed/HXZRLwVQDEk?si=Q2jqKFmZp0e8VYvy&amp;controls=0&autoplay=1&showinfo=0&rel=0&loop=1"-->
+<!--                    title="YouTube video player" frameborder="0"-->
+<!--                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"-->
+<!--                    allowfullscreen>-->
+<!--            </iframe>-->
         </div>
-        <div class="absolute top-0 left-0 w-full h-full bg-[#00000080]">
-
-        </div>
+        <div class="absolute top-0 left-0 w-full h-full bg-[#00000080]"></div>
         <div class="h-full w-full absolute top-0 left-0">
             <div class="mx-auto max-w-[960px] w-full h-full flex flex-col justify-center items-center text-white">
                 <img src="./img/logo-vyatsu.svg" alt="logo-vyatsu" class="max-w-[150px]">
@@ -79,7 +79,6 @@
                     Вятский государственный университет
                 </div>
             </div>
-
         </div>
     </div>
 </div>
@@ -347,7 +346,14 @@
         <div class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-10">
             <a class="min-h-[400px] bg-white rounded-3xl overflow-hidden">
                 <div class="h-[270px] bg-no-repeat bg-cover bg-center"
-                     style="background-image: url('./img/Prevoshodnaya_ideya.png')"></div>
+                     style="background-image: url('./img/Prevoshodnaya_ideya.png')">
+                    <div class=" p-3">
+                        <div class="bg-[#00000080] px-2 py-1 w-fit text-white text-[10px] rounded-md text-center font-bold">
+                            НАУЧНО-ИССЛЕДОВАТЕЛЬСКАЯ ПОЛИТИКА И ПОЛИТИКА В ОБЛАСТИ ИННОВАЦИЙ И КОММЕРЦИАЛИЗАЦИИ
+                            РАЗРАБОТОК
+                        </div>
+                    </div>
+                </div>
                 <div class="p-5">
                     <div class="font-bold text-base md:text-lg">
                         В ВятГУ стартует конкурс «Превосходная идея!»
@@ -359,7 +365,13 @@
             </a>
             <a class="min-h-[400px] bg-white rounded-3xl overflow-hidden">
                 <div class="h-[270px] bg-no-repeat bg-cover bg-center"
-                     style="background-image: url('./img/Prevoshodnaya_ideya.png')"></div>
+                     style="background-image: url('./img/Prevoshodnaya_ideya.png')">
+                    <div class=" p-3">
+                        <div class="bg-[#00000080] px-2 py-1 w-fit text-white text-[10px] rounded-md text-center font-bold">
+                            КАМПУСНАЯ ПОЛИТИКА
+                        </div>
+                    </div>
+                </div>
                 <div class="p-5">
                     <div class="font-bold text-base md:text-lg">
                         Люди ВятГУ: Юлия и Родион Завалины
@@ -371,7 +383,13 @@
             </a>
             <a class="min-h-[400px] bg-white rounded-3xl overflow-hidden">
                 <div class="h-[270px] bg-no-repeat bg-cover bg-center"
-                     style="background-image: url('./img/Prevoshodnaya_ideya.png')"></div>
+                     style="background-image: url('./img/Prevoshodnaya_ideya.png')">
+                    <div class=" p-3">
+                        <div class="bg-[#00000080] px-2 py-1 w-fit text-white text-[10px] rounded-md text-center font-bold">
+                            ОБРАЗОВАТЕЛЬНАЯ ПОЛИТИКА
+                        </div>
+                    </div>
+                </div>
                 <div class="p-5">
                     <div class="font-bold text-base md:text-lg">
                         Сотрудники ВятГУ высадили саженцы молодых деревьев
@@ -390,11 +408,100 @@
         </div>
     </div>
 </div>
+<!-- #10 block -->
+<div class="py-20 bg-white">
+    <div class="mx-auto max-w-[1200px]">
+        <div class="tracking-[.5px] leading-[1.17] text-[28px] md:text-[42px] font-bold text-center text-[#383a3f]">
+            Дирекция программы
+        </div>
+        <div class="mt-10 relative flex justify-center items-center">
+            <div class="w-[85%]">
+                <div id="sliderLider" class="md:-order-1 mx-auto flex justify-center">
+                    <div>
+                        <div class="h-full flex flex-col rounded-2xl">
+                            <img class="aspect-square" src="./img/people/1.jpg" alt="people1">
+                            <div class="px-4">
+                                <div class="mt-4 text-base font-bold">Пугач Валентин Николаевич</div>
+                                <div class="mt-2 font-normal text-sm">ректор ВятГУ</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex flex-col rounded-2xl">
+                            <img class="aspect-square" src="./img/people/2.jpg" alt="people2">
+                            <div class="px-4">
+                                <div class="mt-4 text-base font-bold">Бажин Константин Сергеевич</div>
+                                <div class="mt-2 font-normal text-sm">проректор по стратегическому развитию и проектной деятельности</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex flex-col rounded-2xl">
+                            <img class="aspect-square" src="./img/people/2.jpg" alt="people2">
+                            <div class="px-4">
+                                <div class="mt-4 text-base font-bold">Бажин Константин Сергеевич</div>
+                                <div class="mt-2 font-normal text-sm">проректор по стратегическому развитию и проектной деятельности</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex flex-col rounded-2xl">
+                            <img class="aspect-square" src="./img/people/1.jpg" alt="people1">
+                            <div class="px-4">
+                                <div class="mt-4 text-base font-bold">Пугач Валентин Николаевич</div>
+                                <div class="mt-2 font-normal text-sm">ректор ВятГУ</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex flex-col rounded-2xl">
+                            <img class="aspect-square" src="./img/people/1.jpg" alt="people1">
+                            <div class="px-4">
+                                <div class="mt-4 text-base font-bold">Пугач Валентин Николаевич</div>
+                                <div class="mt-2 font-normal text-sm">ректор ВятГУ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="controls-lider"
+                     class="flex justify-between items-center w-full absolute top-[45%] left-0 translate-y-[-50%]">
+                    <div class="bg-black w-10 h-10 flex justify-center items-center text-white rounded-full cursor-pointer rotate-180">
+                        <svg height="20" width="20" role="presentation" focusable="false" style="display: block" viewBox="0 0 10.6 18"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <polyline fill="none" stroke="#ffffff" stroke-linejoin="butt" stroke-linecap="butt"
+                                      stroke-width="2" points="1,1 9,9 1,17"></polyline>
+                        </svg>
+                    </div>
+                    <div class="bg-black w-10 h-10 flex justify-center items-center text-white rounded-full cursor-pointer">
+                        <svg height="20" width="20" role="presentation" focusable="false" style="display: block" viewBox="0 0 10.6 18"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <polyline fill="none" stroke="#ffffff" stroke-linejoin="butt" stroke-linecap="butt"
+                                      stroke-width="2" points="1,1 9,9 1,17"></polyline>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- #11 block -->
+<div class="py-20 bg-[#f4f4f6]">
+    <div class="tracking-[.5px] leading-[1.17] text-[28px] md:text-[42px] font-bold text-center text-[#383a3f]">
+        Связаться с дирекцией
+    </div>
+    <div class="mt-5 md:mt-10 text-center text-[20px] md:text-[26px]">
+        Вы можете направлять свои вопросы и <br> предложения на электронную почту:
+    </div>
+    <div class="mt-5 md:mt-10 text-center text-[28px]">
+        <strong>Email:</strong> <a href="mailto:design_office@vyatsu.ru">design_office@vyatsu.ru</a>
+    </div>
+</div>
 <!---->
 <footer class="py-10 bg-white">
     <div class="px-5 flex flex-col xl:flex-row gap-10 justify-between items-center">
         <div class="flex-1 h-full flex justify-center">
-            <img class="h-full min-w-[300px]" src="./img/logo.svg" alt="logo">
+            <img class="h-full max-w-[300px] w-[300px] " src="./img/logo.svg" alt="logo">
         </div>
         <div class="flex-1 text-red-500 text-center">
             © Вятский государственный университет,
@@ -470,5 +577,32 @@
     }
 
     addEvents()
+
+    let sliderLider = tns({
+        container: '#sliderLider',
+        slideBy: 'page',
+        "swipeAngle": false,
+        "gutter": 30,
+        autoplay: true,
+        autoplayButtonOutput: false,
+        speed: 750,
+        nav: false,
+        autoplayButton: false,
+        controlsContainer: "#controls-lider",
+        edgePadding: 0,
+        items: 1,
+        loop: true,
+        responsive: {
+            640: {
+                items: 2
+            },
+            768: {
+                items: 3
+            },
+            1024: {
+                items: 4
+            }
+        }
+    });
 </script>
 </html>
