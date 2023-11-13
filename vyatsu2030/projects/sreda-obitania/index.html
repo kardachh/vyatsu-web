@@ -13,40 +13,49 @@
 </head>
 <body>
 <header class="fixed top-0 left-0 bg-white shadow-md w-full h-24 text-black z-30">
-    <div class="w-full max-w-[1200px] h-full flex justify-center xl:justify-between items-center mx-auto ">
+    <div class="w-full max-w-[1200px] h-full flex justify-between items-center mx-auto px-10">
         <!--            logo-->
         <a href="/vyatsu-web/vyatsu2030/" class="">
-            <img src="./../../img/logo.svg" alt="logo" class="w-full max-w-[300px] h-auto">
+            <img src="/vyatsu-web/vyatsu2030/img/logo.svg" alt="logo" class="w-full max-w-[300px] h-auto">
         </a>
         <!--            nav-->
         <nav class="hidden xl:block">
             <ul class="flex space-x-5 uppercase text-[13px] font-bold tracking-[1.92px]">
                 <li>
-                    <a href="/vyatsu-web/vyatsu2030/" class="hover:text-red-600">
+                    <a href="/vyatsu-web/vyatsu2030/#" class="hover:text-red-600">
                         О программе
                     </a>
                 </li>
                 <li>
-                    <a href="/vyatsu-web/vyatsu2030/" class="hover:text-red-600">
+                    <a href="/vyatsu-web/vyatsu2030/#projects" class="hover:text-red-600">
                         Проекты и политики
                     </a>
                 </li>
                 <li class="nav__link-with-popup">
-                    <a href="#" class="hover:text-red-600">
+                    <div class="hover:text-red-600">
                         Стратегические проекты
-                    </a>
+                    </div>
                 </li>
                 <li>
-                    <a href="/vyatsu-web/vyatsu2030/" class="hover:text-red-600">
+                    <a href="/vyatsu-web/vyatsu2030/#news" class="hover:text-red-600">
                         Новости
                     </a>
                 </li>
                 <li>
-                    <a href="/vyatsu-web/vyatsu2030/" class="hover:text-red-600">
+                    <a href="/vyatsu-web/vyatsu2030/#directorate" class="hover:text-red-600">
                         Дирекция
                     </a>
                 </li>
             </ul>
+        </nav>
+
+        <!--    for mobile    -->
+        <nav id="nav-mobile" class="block xl:hidden">
+            <svg class="h-10 w-10" xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none">
+                <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+                <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+                <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+            </svg>
         </nav>
     </div>
 </header>
@@ -220,14 +229,12 @@
                  style="background-image: url('./../../img/projects/sreda-obitania/3.jpeg')"></div>
         </div>
     </div>
-
-
 </div>
 
 <!-- #8 block -->
-<div id="subproject-medicines-of-the-future" class="py-20 bg-white">
+<div id="" class="py-20 bg-white">
     <div class="mx-auto max-w-[1200px] px-5 xl:px-0">
-        <div class="mt-20 tracking-[.5px] leading-[1.17] text-[28px] md:text-[42px] font-bold text-center text-[#383a3f]">
+        <div class="tracking-[.5px] leading-[1.17] text-[28px] md:text-[42px] font-bold text-center text-[#383a3f]">
             Ожидаемые результаты стратегического проекта<br>«Среда обитания»:
         </div>
         <div class="mt-20 grid grid-cols-1 gap-8 md:w-[665px] mx-auto">
