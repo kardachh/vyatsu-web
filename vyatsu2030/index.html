@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Программа развития ВятГУ «Приоритет 2030»</title>
     <link href="../output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
@@ -10,10 +12,10 @@
     <!--  popup  -->
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
-</head>
+    <!--</head>-->
 <body class="font-sans text-[#383a3f]">
 <header class="fixed top-0 left-0 bg-white shadow-md w-full h-24 text-black z-30">
-    <div class="w-full max-w-[1200px] h-full flex justify-between items-center mx-auto px-10">
+    <div class="w-full max-w-[1200px] h-full flex justify-between items-center mx-auto px-10 xl:px-0">
         <!--            logo-->
         <a href="/vyatsu-web/vyatsu2030/" class="">
             <img src="/vyatsu-web/vyatsu2030/img/logo.svg" alt="logo" class="w-full max-w-[300px] h-auto">
@@ -50,8 +52,9 @@
         </nav>
 
         <!--    for mobile    -->
-        <nav id="nav-mobile" class="block xl:hidden">
-            <svg class="h-10 w-10" xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none">
+        <nav id="nav-mobile" class="block xl:hidden ml-10">
+            <svg class="h-10 w-10" xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24"
+                 fill="none">
                 <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
                 <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
                 <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
@@ -61,36 +64,22 @@
 </header>
 <!--        #1 block-->
 <div class="w-full h-[calc(100vh-6rem)] min-h-[500px]">
-    <div class="mt-24 relative h-full w-full bg-no-repeat bg-fixed bg-center bg-cover"
-         style="background-image: url('./img/projects/sreda-obitania/ekologia.png')">
-        <!--    video wrapper-->
-        <!--        margin-top: -300px;-->
-        <!--        margin-left: -750px;-->
-        <!--        height: 1800px;-->
-        <!--        width: 2100px;-->
-
-        <!--    hidden -> flex    -->
-        <div class="hidden absolute w-full h-full justify-center overflow-hidden">
-            <!--  video iframe-->
-            <!--            <iframe-->
-            <!--                    class=""-->
-            <!--                    src="https://www.youtube.com/embed/HXZRLwVQDEk?si=Q2jqKFmZp0e8VYvy&amp;controls=0&autoplay=1&showinfo=0&rel=0&loop=1"-->
-            <!--                    title="YouTube video player" frameborder="0"-->
-            <!--                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"-->
-            <!--                    allowfullscreen>-->
-            <!--            </iframe>-->
-        </div>
-        <div class="absolute top-0 left-0 w-full h-full bg-[#00000040]"></div>
-        <div class="h-full w-full absolute top-0 left-0">
-            <div class="mx-auto max-w-[960px] w-full h-full flex flex-col justify-center items-center text-white">
-                <img src="./img/logo-vyatsu.svg" alt="logo-vyatsu" class="max-w-[150px]">
-                <div class="mt-14 tracking-[.5px] leading-[1.17] text-[32px] md:text-[68px] font-bold text-center">
-                    Создаем регион,
-                    <br>
-                    в котором хочется жить
-                </div>
-                <div class="mt-7 text-sm md:text-[22px]">
-                    Вятский государственный университет
+    <div class="mt-24 relative h-full w-full">
+        <div class="h-full w-full absolute top-0 left-0 bg-no-repeat bg-fixed bg-center bg-cover"
+             style="background-image: url('./img/projects/sreda-obitania/ekologia.png')">
+            <div class="h-full w-full absolute top-0 left-0">
+                <div class="h-full bg-[#00000040]">
+                    <div class="mx-auto max-w-[960px] w-full h-full flex flex-col justify-center items-center text-white">
+                        <img src="./img/logo-vyatsu.svg" alt="logo-vyatsu" class="max-w-[150px]">
+                        <div class="mt-14 tracking-[.5px] leading-[1.17] text-[32px] md:text-[68px] font-bold text-center">
+                            Создаем регион,
+                            <br>
+                            в котором хочется жить
+                        </div>
+                        <div class="mt-7 text-sm md:text-[22px]">
+                            Вятский государственный университет
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
