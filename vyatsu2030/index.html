@@ -13,31 +13,31 @@
 </head>
 <body class="font-sans text-[#383a3f]">
 <header class="fixed top-0 left-0 bg-white shadow-md w-full h-24 text-black z-30">
-    <div class="w-full max-w-[1200px] h-full flex justify-center xl:justify-between items-center mx-auto ">
+    <div class="w-full max-w-[1200px] h-full flex justify-between items-center mx-auto px-10">
         <!--            logo-->
         <a href="/vyatsu-web/vyatsu2030/" class="">
-            <img src="./img/logo.svg" alt="logo" class="w-full max-w-[300px] h-auto">
+            <img src="/vyatsu-web/vyatsu2030/img/logo.svg" alt="logo" class="w-full max-w-[300px] h-auto">
         </a>
         <!--            nav-->
         <nav class="hidden xl:block">
             <ul class="flex space-x-5 uppercase text-[13px] font-bold tracking-[1.92px]">
                 <li>
-                    <a href="/vyatsu-web/vyatsu2030/" class="hover:text-red-600">
+                    <a href="/vyatsu-web/vyatsu2030/#" class="hover:text-red-600">
                         О программе
                     </a>
                 </li>
                 <li>
-                    <a href="/vyatsu-web/vyatsu2030/" class="hover:text-red-600">
+                    <a href="/vyatsu-web/vyatsu2030/#projects" class="hover:text-red-600">
                         Проекты и политики
                     </a>
                 </li>
                 <li class="nav__link-with-popup">
-                    <a href="/vyatsu-web/vyatsu2030/" class="hover:text-red-600">
+                    <div class="hover:text-red-600">
                         Стратегические проекты
-                    </a>
+                    </div>
                 </li>
                 <li>
-                    <a href="/vyatsu-web/vyatsu2030/" class="hover:text-red-600">
+                    <a href="/vyatsu-web/vyatsu2030/#news" class="hover:text-red-600">
                         Новости
                     </a>
                 </li>
@@ -48,11 +48,21 @@
                 </li>
             </ul>
         </nav>
+
+        <!--    for mobile    -->
+        <nav id="nav-mobile" class="block xl:hidden">
+            <svg class="h-10 w-10" xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none">
+                <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+                <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+                <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </nav>
     </div>
 </header>
 <!--        #1 block-->
 <div class="w-full h-[calc(100vh-6rem)] min-h-[500px]">
-    <div class="mt-24 relative h-full w-full">
+    <div class="mt-24 relative h-full w-full bg-no-repeat bg-fixed bg-center bg-cover"
+         style="background-image: url('./img/projects/sreda-obitania/ekologia.png')">
         <!--    video wrapper-->
         <!--        margin-top: -300px;-->
         <!--        margin-left: -750px;-->
@@ -62,15 +72,15 @@
         <!--    hidden -> flex    -->
         <div class="hidden absolute w-full h-full justify-center overflow-hidden">
             <!--  video iframe-->
-<!--            <iframe-->
-<!--                    class=""-->
-<!--                    src="https://www.youtube.com/embed/HXZRLwVQDEk?si=Q2jqKFmZp0e8VYvy&amp;controls=0&autoplay=1&showinfo=0&rel=0&loop=1"-->
-<!--                    title="YouTube video player" frameborder="0"-->
-<!--                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"-->
-<!--                    allowfullscreen>-->
-<!--            </iframe>-->
+            <!--            <iframe-->
+            <!--                    class=""-->
+            <!--                    src="https://www.youtube.com/embed/HXZRLwVQDEk?si=Q2jqKFmZp0e8VYvy&amp;controls=0&autoplay=1&showinfo=0&rel=0&loop=1"-->
+            <!--                    title="YouTube video player" frameborder="0"-->
+            <!--                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"-->
+            <!--                    allowfullscreen>-->
+            <!--            </iframe>-->
         </div>
-        <div class="absolute top-0 left-0 w-full h-full bg-[#00000080]"></div>
+        <div class="absolute top-0 left-0 w-full h-full bg-[#00000040]"></div>
         <div class="h-full w-full absolute top-0 left-0">
             <div class="mx-auto max-w-[960px] w-full h-full flex flex-col justify-center items-center text-white">
                 <img src="./img/logo-vyatsu.svg" alt="logo-vyatsu" class="max-w-[150px]">
@@ -174,7 +184,7 @@
     </div>
 </div>
 <!-- #6 block -->
-<div class="py-20 bg-white">
+<div id="projects" class="py-20 bg-white">
     <div class="mx-auto max-w-[1200px] px-8 xl:px-0">
         <div class="flex flex-col items-center space-y-8">
             <div class="text-[36px] md:text-[78px] lg:text-[82px] font-bold text-center">Как мы это делаем?</div>
@@ -221,7 +231,7 @@
                                 Научный подход к решению проблемы лишнего веса и инновационные фармацевтические
                                 технологии.
                             </div>
-                            <a href="./projects/tehnologii-zdorovya/index.html" class="card_description hidden">
+                            <a href="./projects/tehnologii-zdorovya/" class="card_description hidden">
                                 <div class="mt-4 font-bold">
                                     Перейти
                                 </div>
@@ -241,7 +251,7 @@
                             <div class="card_description text-base hidden">
                                 «Зеленая» энергетика и снижение выбросов диоксида углерода.
                             </div>
-                            <a href="#" class="card_description hidden">
+                            <a href="./projects/sreda-obitania" class="card_description hidden">
                                 <div class="mt-4 font-bold">
                                     Перейти
                                 </div>
@@ -262,7 +272,7 @@
                                 Образовательные сервисы, платформы, технологии и ресурсы университета для развития
                                 личности.
                             </div>
-                            <a href="#" class="card_description hidden">
+                            <a href="./projects/garmonichnaya-lichnost" class="card_description hidden">
                                 <div class="mt-4 font-bold">
                                     Перейти
                                 </div>
@@ -305,8 +315,8 @@
     </div>
 </div>
 <!-- #9 block -->
-    <div class="py-20 bg-[#f4f4f6]">
-        <div class="mx-auto max-w-[1200px] px-8 xl:px-0">
+<div id="news" class="py-20 bg-[#f4f4f6]">
+    <div class="mx-auto max-w-[1200px] px-8 xl:px-0">
         <div class="tracking-[.5px] leading-[1.17] text-[28px] md:text-[42px] font-bold text-center text-[#383a3f]">
             Новости
         </div>
@@ -435,7 +445,9 @@
                             <img class="aspect-square" src="./img/people/2.jpg" alt="people2">
                             <div class="px-4">
                                 <div class="mt-4 text-base font-bold">Бажин Константин Сергеевич</div>
-                                <div class="mt-2 font-normal text-sm">проректор по стратегическому развитию и проектной деятельности</div>
+                                <div class="mt-2 font-normal text-sm">проректор по стратегическому развитию и проектной
+                                    деятельности
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -444,7 +456,9 @@
                             <img class="aspect-square" src="./img/people/2.jpg" alt="people2">
                             <div class="px-4">
                                 <div class="mt-4 text-base font-bold">Бажин Константин Сергеевич</div>
-                                <div class="mt-2 font-normal text-sm">проректор по стратегическому развитию и проектной деятельности</div>
+                                <div class="mt-2 font-normal text-sm">проректор по стратегическому развитию и проектной
+                                    деятельности
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -470,14 +484,16 @@
                 <div id="controls-lider"
                      class="flex justify-between items-center w-full absolute top-[45%] left-0 translate-y-[-50%]">
                     <div class="bg-black w-10 h-10 flex justify-center items-center text-white rounded-full cursor-pointer rotate-180">
-                        <svg height="20" width="20" role="presentation" focusable="false" style="display: block" viewBox="0 0 10.6 18"
+                        <svg height="20" width="20" role="presentation" focusable="false" style="display: block"
+                             viewBox="0 0 10.6 18"
                              xmlns="http://www.w3.org/2000/svg">
                             <polyline fill="none" stroke="#ffffff" stroke-linejoin="butt" stroke-linecap="butt"
                                       stroke-width="2" points="1,1 9,9 1,17"></polyline>
                         </svg>
                     </div>
                     <div class="bg-black w-10 h-10 flex justify-center items-center text-white rounded-full cursor-pointer">
-                        <svg height="20" width="20" role="presentation" focusable="false" style="display: block" viewBox="0 0 10.6 18"
+                        <svg height="20" width="20" role="presentation" focusable="false" style="display: block"
+                             viewBox="0 0 10.6 18"
                              xmlns="http://www.w3.org/2000/svg">
                             <polyline fill="none" stroke="#ffffff" stroke-linejoin="butt" stroke-linecap="butt"
                                       stroke-width="2" points="1,1 9,9 1,17"></polyline>
