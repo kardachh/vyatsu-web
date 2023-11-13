@@ -15,34 +15,34 @@
 <header class="fixed top-0 left-0 bg-white shadow-md w-full h-24 text-black z-30">
     <div class="w-full max-w-[1200px] h-full flex justify-center xl:justify-between items-center mx-auto ">
         <!--            logo-->
-        <a href="#" class="">
+        <a href="/vyatsu-web/vyatsu2030/" class="">
             <img src="./img/logo.svg" alt="logo" class="w-full max-w-[300px] h-auto">
         </a>
         <!--            nav-->
         <nav class="hidden xl:block">
             <ul class="flex space-x-5 uppercase text-[13px] font-bold tracking-[1.92px]">
                 <li>
-                    <a href="#" class="hover:text-red-600">
+                    <a href="/vyatsu-web/vyatsu2030/" class="hover:text-red-600">
                         О программе
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="hover:text-red-600">
+                    <a href="/vyatsu-web/vyatsu2030/" class="hover:text-red-600">
                         Проекты и политики
                     </a>
                 </li>
                 <li class="nav__link-with-popup">
-                    <a href="#" class="hover:text-red-600">
+                    <a href="/vyatsu-web/vyatsu2030/" class="hover:text-red-600">
                         Стратегические проекты
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="hover:text-red-600">
+                    <a href="/vyatsu-web/vyatsu2030/" class="hover:text-red-600">
                         Новости
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="hover:text-red-600">
+                    <a href="/vyatsu-web/vyatsu2030/#directorate" class="hover:text-red-600">
                         Дирекция
                     </a>
                 </li>
@@ -413,7 +413,7 @@
     </div>
 </div>
 <!-- #10 block -->
-<div class="py-20 bg-white">
+<div id="directorate" class="py-20 bg-white">
     <div class="mx-auto max-w-[1200px]">
         <div class="tracking-[.5px] leading-[1.17] text-[28px] md:text-[42px] font-bold text-center text-[#383a3f]">
             Дирекция программы
@@ -559,83 +559,6 @@
     </div>
 </footer>
 </body>
-<script>
-
-    const addEvents = () => {
-        console.log(`addEvents()`)
-        // toggle description to cards
-        // document.querySelectorAll('.card')
-        Array.from(document.querySelectorAll('.card')).forEach(el => {
-            el.addEventListener('mouseover', () => {
-                Array.from(el.querySelectorAll('.card_description')).forEach((elDesc) => {
-                    if (elDesc.classList.contains('hidden')) {
-                        elDesc.classList.toggle('hidden', false)
-                    }
-                })
-            });
-            el.addEventListener('mouseout', () => {
-                Array.from(el.querySelectorAll('.card_description')).forEach((elDesc) => {
-                    elDesc.classList.toggle('hidden', true)
-                })
-            });
-        })
-
-        // slider for block #10
-        let sliderLider = tns({
-            container: '#sliderLider',
-            slideBy: 'page',
-            "swipeAngle": false,
-            "gutter": 30,
-            autoplay: true,
-            autoplayButtonOutput: false,
-            speed: 750,
-            nav: false,
-            autoplayButton: false,
-            controlsContainer: "#controls-lider",
-            edgePadding: 0,
-            items: 1,
-            loop: true,
-            responsive: {
-                640: {
-                    items: 2
-                },
-                768: {
-                    items: 3
-                },
-                1024: {
-                    items: 4
-                }
-            }
-        });
-
-        // tippy for "Стратегические проекты" links menu
-        // nav__link-with-popup
-        tippy('.nav__link-with-popup',{
-            theme: 'custom-white',
-            allowHTML: true,
-            interactive: true,
-            // offset:[0,40],
-            content: `
-                <div class="bg-white text-black normal-case text-center">
-                    <ul class="space-y-5">
-                        <li>
-                            <a href="./projects/tehnologii-zdorovya">Технологии<br>здоровья</a>
-                        </li>
-                        <li>
-                            <a href="./projects/#">Среда<br>обитания</a>
-                        </li>
-                        <li>
-                            <a href="./projects/#">Гармоничная<br>личность</a>
-                        </li>
-                    </ul>
-                </div>
-            `
-        })
-    }
-
-
-
-    window.onload = addEvents
-
-</script>
+<script src="js/main.js"></script>
+<script src="js/slider.js"></script>
 </html>
