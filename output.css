@@ -566,6 +566,14 @@ video {
   top: 45%;
 }
 
+.left-10 {
+  left: 2.5rem;
+}
+
+.left-5 {
+  left: 1.25rem;
+}
+
 .z-30 {
   z-index: 30;
 }
@@ -600,8 +608,17 @@ video {
   margin-bottom: 1rem;
 }
 
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .mb-5 {
   margin-bottom: 1.25rem;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
 }
 
 .mt-10 {
@@ -650,14 +667,6 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.ml-5 {
-  margin-left: 1.25rem;
-}
-
-.ml-10 {
-  margin-left: 2.5rem;
 }
 
 .block {
@@ -726,6 +735,10 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-\[50px\] {
+  height: 50px;
 }
 
 .max-h-\[100px\] {
@@ -807,6 +820,10 @@ video {
 
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-\[620px\] {
+  max-width: 620px;
 }
 
 .flex-1 {
@@ -967,9 +984,17 @@ video {
   border-width: 1px;
 }
 
+.border-b {
+  border-bottom-width: 1px;
+}
+
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.border-opacity-80 {
+  --tw-border-opacity: 0.8;
 }
 
 .bg-\[\#00000040\] {
@@ -1239,8 +1264,21 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-\[rgb\(56\2c 58\2c 63\)\] {
+  --tw-text-opacity: 1;
+  color: rgb(56 58 63 / var(--tw-text-opacity));
+}
+
+.text-\[rgba\(0\2c 0\2c 0\2c 0\.5\)\] {
+  color: rgba(0,0,0,0.5);
+}
+
 .opacity-20 {
   opacity: 0.2;
+}
+
+.opacity-80 {
+  opacity: 0.8;
 }
 
 .shadow-md {
@@ -1253,6 +1291,14 @@ video {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.outline-1 {
+  outline-width: 1px;
+}
+
+.outline-amber-600 {
+  outline-color: #d97706;
 }
 
 html {
@@ -1444,6 +1490,16 @@ html {
   .lg\:text-\[82px\] {
     font-size: 82px;
   }
+
+  .lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1459,10 +1515,6 @@ html {
     flex-direction: row;
   }
 
-  .xl\:justify-between {
-    justify-content: space-between;
-  }
-
   .xl\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -1471,5 +1523,9 @@ html {
   .xl\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .xl\:text-\[36px\] {
+    font-size: 36px;
   }
 }
