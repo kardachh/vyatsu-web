@@ -1,4 +1,4 @@
-#vyatsu-web
+# vyatsu-web
 
 Репозиторий для проектов ВятГУ
 
@@ -10,3 +10,5 @@ https://kardachh.github.io/vyatsu-web/
      - https://kardachh.github.io/vyatsu-web/vyatsu2030/projects/sreda-obitania/
      - https://kardachh.github.io/vyatsu-web/vyatsu2030/projects/garmonichnaya-lichnost/
      - https://kardachh.github.io/vyatsu-web/vyatsu2030/news
+2. Кировский региональный центр исследований и экспертиз ВятГУ
+   - - https://kardachh.github.io/vyatsu-web/expert/
