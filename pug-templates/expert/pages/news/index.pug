@@ -1,0 +1,21 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+        title АВТОНОМНАЯ НЕКОММЕРЧЕСКАЯ ОРГАНИЗАЦИЯ &quot;КИРОВСКИЙ РЕГИОНАЛЬНЫЙ ЦЕНТР ИССЛЕДОВАНИЙ И ЭКСПЕРТИЗ ВЯТГУ
+        link(href="../../output.css" rel="stylesheet")
+    body(class="font-['Circe',Arial,sans-serif'] text-[rgb(51,58,146)]")
+        include  ../../templates/header
+
+        div(class="mx-auto max-w-[1200px] px-5 lg:px-0")
+            div(class="py-[120px] text-center text-black font-bold text-[36px] lg:text-[78px]") НОВОСТИ И АНОНСЫ
+            div(class="py-20 grid grid-cols-1 lg:grid-cols-3 gap-10 gap-y-20")
+                each _ in Array(8)
+                    a(href="/vyatsu-web/expert/news/example1" class="")
+                        div(class="aspect-video bg-no-repeat bg-center bg-cover" style="background-image:url('../img/news/example1/1.jpeg')")
+                        div(class="py-5 text-[rgb(119,119,119)] text-xs font-thin uppercase") Friday, November 1
+                        div(class="text-[22px] lg:text-[26px] font-semibold text-black leading-[32px]") В Кирове школьникам напомнили о мерах профилактики экстремизма и терроризма
+
+        include  ../../templates/contacts
+        include  ../../templates/footer
