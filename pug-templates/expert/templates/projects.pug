@@ -1,0 +1,12 @@
+div(id="projects" class="")
+    div(class="mx-auto max-w-[1200px] px-5 lg:px-0")
+        div(class="text-center text-black text-[30px] lg:text-[64px] mb-10 font-semibold") Наши проекты
+    div(class="grid grid-cols-1 md:grid-cols-2")
+        each _ in Array(6)
+            a(class = "min-h-[450px] relative" href="/vyatsu-web/expert/projects/example1")
+                div(class="absolute left-0 top-0 h-full w-full  bg-no-repeat bg-center bg-cover"
+                    style="background-image: url('./img/projects/1.png')")
+                    div(class="absolute left-0 top-0 h-full w-full")
+                        div(class="h-full transition ease-in-out bg-[#000000a0] hover:bg-[#00000090] px-0 lg:px-[15%] flex flex-col justify-center items-center text-center text-white")
+                            div(class="text-[28px] lg:text-[36px] font-semibold") Региональный штаб позитивных изменений
+                            div(class="mt-10 text-xs lg:text-base font-light") Проекты КРЦИиЭ
