@@ -40,32 +40,32 @@ html(lang="en")
                         // Swiper
                         div(class="swiper mySwiper2 h-fit" style='--swiper-navigation-color: #000; --swiper-pagination-color: #000')
                             div(class="swiper-wrapper")
-                                img(class="h-full swiper-slide aspect-video" src='/expert/img/news/example1/1.jpeg')
-                                img(class="h-full swiper-slide aspect-video" src='/expert/img/news/example1/2.jpeg')
-                                img(class="h-full swiper-slide aspect-video" src='/expert/img/news/example1/3.jpeg')
+                                img(class="h-full swiper-slide w-full" src='/vyatsu-web/expert/img/news/example1/1.jpeg')
+                                img(class="h-full swiper-slide w-full" src='/vyatsu-web/expert/img/news/example1/2.jpeg')
+                                img(class="h-full swiper-slide w-full" src='/vyatsu-web/expert/img/news/example1/3.jpeg')
                             //.swiper-button-next
                             //.swiper-button-prev
-                        div(class="swiper mySwiper mt-1")
+                        div(class="swiper mySwiper mt-1 h-[50px]")
                             .swiper-wrapper
-                                img(class="h-full swiper-slide cursor-pointer" src='/expert/img/news/example1/1.jpeg')
-                                img(class="h-full swiper-slide cursor-pointer" src='/expert/img/news/example1/2.jpeg')
-                                img(class="h-full swiper-slide cursor-pointer" src='/expert/img/news/example1/3.jpeg')
+                                img(class="h-full swiper-slide cursor-pointer !w-auto" src='/vyatsu-web/expert/img/news/example1/1.jpeg')
+                                img(class="h-full swiper-slide cursor-pointer !w-auto" src='/vyatsu-web/expert/img/news/example1/2.jpeg')
+                                img(class="h-full swiper-slide cursor-pointer !w-auto" src='/vyatsu-web/expert/img/news/example1/3.jpeg')
             div(class="py-20")
                 div(class="grid grid-cols-1 lg:grid-cols-3 gap-10")
                     div(class="lg:col-span-2")
                         // Swiper
-                        div(class="swiper mySwiper4 aspect-video" style='--swiper-navigation-color: #000; --swiper-pagination-color: #000')
+                        div(class="swiper mySwiper4" style='--swiper-navigation-color: #000; --swiper-pagination-color: #000')
                             div(class="swiper-wrapper")
-                                img(class="h-full swiper-slide aspect-video" src='/expert/img/news/example1/1.jpeg')
-                                img(class="h-full swiper-slide aspect-video" src='/expert/img/news/example1/2.jpeg')
-                                img(class="h-full swiper-slide aspect-video" src='/expert/img/news/example1/3.jpeg')
+                                img(class="h-full swiper-slide w-full" src='/vyatsu-web/expert/img/news/example1/1.jpeg')
+                                img(class="h-full swiper-slide w-full" src='/vyatsu-web/expert/img/news/example1/2.jpeg')
+                                img(class="h-full swiper-slide w-full" src='/vyatsu-web/expert/img/news/example1/3.jpeg')
                             //.swiper-button-next
                             //.swiper-button-prev
-                        div(class="swiper mySwiper3 mt-1")
+                        div(class="swiper mySwiper3 mt-1 h-[50px]")
                             .swiper-wrapper
-                                img(class="h-full swiper-slide cursor-pointer" src='/expert/img/news/example1/1.jpeg')
-                                img(class="h-full swiper-slide cursor-pointer" src='/expert/img/news/example1/2.jpeg')
-                                img(class="h-full swiper-slide cursor-pointer" src='/expert/img/news/example1/3.jpeg')
+                                img(class="h-full swiper-slide cursor-pointer !w-auto" src='/vyatsu-web/expert/img/news/example1/1.jpeg')
+                                img(class="h-full swiper-slide cursor-pointer !w-auto" src='/vyatsu-web/expert/img/news/example1/2.jpeg')
+                                img(class="h-full swiper-slide cursor-pointer !w-auto" src='/vyatsu-web/expert/img/news/example1/3.jpeg')
                     div(class="text-[20px] font-light").
                         Участников акции организаторы разделили на несколько команд,
                         в составе которых им было предложено поучаствовать в игре по станциям.
@@ -86,10 +86,11 @@ html(lang="en")
 
 script.
     // низ
+    // slidesPerView ==< count of pics
     const swiper = new Swiper(".mySwiper", {
         loop: true,
         spaceBetween: 4,
-        slidesPerView: "10",
+        slidesPerView: 3,
         freeMode: true,
         watchSlidesProgress: true,
     });
@@ -111,7 +112,7 @@ script.
     const swiper3 = new Swiper(".mySwiper3", {
         loop: true,
         spaceBetween: 4,
-        slidesPerView: "10",
+        slidesPerView: 3,
         freeMode: true,
         watchSlidesProgress: true,
     });
