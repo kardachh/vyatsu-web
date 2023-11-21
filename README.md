@@ -11,4 +11,7 @@ https://kardachh.github.io/vyatsu-web/
      - https://kardachh.github.io/vyatsu-web/vyatsu2030/projects/garmonichnaya-lichnost/
      - https://kardachh.github.io/vyatsu-web/vyatsu2030/news
 2. Кировский региональный центр исследований и экспертиз ВятГУ
-   - - https://kardachh.github.io/vyatsu-web/expert/
+   - https://kardachh.github.io/vyatsu-web/expert/
+      - https://kardachh.github.io/vyatsu-web/expert/projects/example1/
+      - https://kardachh.github.io/vyatsu-web/expert/news/
+      - https://kardachh.github.io/vyatsu-web/expert/news/example1/
