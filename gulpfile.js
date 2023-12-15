@@ -7,8 +7,15 @@ task('pug-expert', function () {
         .pipe(dest('expert'));
 });
 
-task('watch', function () {
-    return watch('pug-templates/**/*.pug', parallel('pug-expert'))
+task('pug-rcfg43', function () {
+    return src('pug-templates/rcfg43/pages/**/*.pug')
+        .pipe(pug({pretty: true}))
+        .pipe(dest('rcfg43'));
+});
+
+task('watch', function() {
+    watch('pug-templates/expert/**/*.pug', parallel('pug-expert'));
+    watch('pug-templates/rcfg43/**/*.pug', parallel('pug-rcfg43'));
 });
 
 task('default', parallel('watch'))
