@@ -1,0 +1,17 @@
+mixin title(name)
+    div(class="py-10")
+        div(class="text-[62px] text-[rgb(2,169,234)] uppercase font-semibold text-center")=name
+
+mixin post(name, link, path_to_img, date)
+    a(class='min-h-[350px] bg-white rounded-3xl overflow-hidden flex flex-col' href=link)
+        div(class='h-[270px] bg-no-repeat bg-cover bg-center' style=`background-image: url('${path_to_img}')`)
+        div(class="flex-1 p-5 pb-10 bg-[rgb(2,169,234)] relative")
+            div(class='font-bold text-xs lg:text-base text-white')=name
+            div(class='font-light text-[10px] text-[#00000080] absolute bottom-5')=date
+
+mixin useful_slide(name, link, path_to_img, description)
+    div(class="swiper-slide h-full w-full")
+        a(class="flex flex-col items-center" href=link)
+            img(src=path_to_img)
+            div(class="text-[rgb(2,169,234)]")=name
+            div(class="text-sm")=description

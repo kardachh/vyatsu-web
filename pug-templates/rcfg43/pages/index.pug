@@ -4,12 +4,18 @@ html(lang="en")
         meta(name="viewport"
             content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
         title АВТОНОМНАЯ НЕКОММЕРЧЕСКАЯ ОРГАНИЗАЦИЯ &quot;КИРОВСКИЙ РЕГИОНАЛЬНЫЙ ЦЕНТР ИССЛЕДОВАНИЙ И ЭКСПЕРТИЗ ВЯТГУ
-        link(href="../output.css" rel="stylesheet")
-    body(class="font-['Circe',Arial,sans-serif'] text-black")
+
+    include ../templates/imports
+    include ../templates/mixins
+
+    body(class="font-[Arial,sans-serif'] text-black")
         include  ../templates/header
         include  ../templates/block-title
         include  ../templates/about
         include  ../templates/projects
-        include  ../templates/news
+        +title("НОВОСТИ")
+        include  ../templates/news_4
+        +title("Полезное")
+        include  ../templates/useful
         include  ../templates/contacts
 
