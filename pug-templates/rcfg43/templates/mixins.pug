@@ -2,6 +2,10 @@ mixin title(name)
     div(class="py-10")
         div(class="text-[62px] text-[rgb(2,169,234)] uppercase font-semibold text-center")=name
 
+mixin title_sm(name)
+    div(class="py-10")
+        div(class="text-[42px] text-[rgb(2,169,234)] uppercase font-semibold text-center")=name
+
 mixin post(name, link, path_to_img, date)
     a(class='min-h-[350px] bg-white rounded-3xl overflow-hidden flex flex-col' href=link)
         div(class='h-[270px] bg-no-repeat bg-cover bg-center' style=`background-image: url('${path_to_img}')`)
@@ -14,4 +18,12 @@ mixin useful_slide(name, link, path_to_img, description)
         a(class="flex flex-col items-center" href=link)
             img(src=path_to_img)
             div(class="text-[rgb(2,169,234)]")=name
-            div(class="text-sm")=description
+            div(class="text-sm text-center")=description
+
+mixin useful_square(name, link, path_to_img)
+    a(class="relative h-[500px] flex justify-center" href=link)
+        div(class="absolute h-full w-full bg-no-repeat bg-center bg-cover" style=`background-image: url('${path_to_img}')`)
+        div(class="absolute h-full w-full bg-[rgb(2,169,234)] opacity-60")
+        div(class="absolute h-full w-full flex justify-center items-center px-10")
+            div(class="text-white text-center text-[24px] lg:text-[30px]")=name
+
