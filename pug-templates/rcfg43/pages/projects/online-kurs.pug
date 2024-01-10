@@ -1,0 +1,62 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+        title Онлайн-курс «Основы финансовой грамотности»
+
+    include ../../templates/imports
+    include ../../templates/mixins
+
+    body(class="font-[Arial,sans-serif'] text-black")
+        include  ../../templates/header
+        // pc
+        div(class="w-full h-[calc(100%-100px)] relative overflow-hidden hidden lg:block" )
+            div(class="h-full absolute w-1/3 right-0 bg-no-repeat bg-center bg-cover" style="background-image: url('/vyatsu-web/rcfg43/img/projects/1.png')")
+            div(class="bg-white rotate-[30deg] absolute -top-[40%] -left-[40%] w-[100%] h-[200%]")
+            div(class="bg-white rotate-[30deg] absolute bottom-0-[40%] -right-[90%] w-[100%] h-[200%]")
+            div(class="bg-white rotate-[30deg] absolute bottom-0-[40%] -right-[90%] w-[100%] h-[200%]")
+            div(class="h-full absolute w-1/3 left-24")
+                div(class="absolute top-[50%] -translate-y-1/2 text-[62px] text-[rgb(2,169,234)] font-semibold leading-[1.23]") ОНЛАЙН-КУРС «ОСНОВЫ ФИНАНСОВОЙ ГРАМОТНОСТИ»
+        // mobile
+        div(class="lg:hidden px-5 py-10")
+            div(class="text-[62px] text-[rgb(2,169,234)] text-center font-semibold leading-[1.23]") ОНЛАЙН-КУРС «ОСНОВЫ ФИНАНСОВОЙ ГРАМОТНОСТИ»
+            img(class="mt-10 w-full" src='/vyatsu-web/rcfg43/img/projects/1.png')
+
+        div(class="py-10 px-5")
+            div(class="font-bold text-[22px] lg:text-[30px] text-center")
+                div(class="") Онлайн курс «Основы финансовой грамотности»
+                a(class="" href="https://stepik.org/course/155101/promo") размещён на международной платформе Stepik
+
+        div(class="py-10 px-5 mx-auto max-w-[960px] font-extralight text-center text-[22px] md:text-[26px] lg:text-[30px] ").
+            Онлайн-курс «Основы финансовой грамотности» разработан Региональным центром финансовой грамотности Кировской области при поддержке министерства финансов Кировской области в рамках Региональной программы «Повышение финансовой грамотности населения Кировской области» на 2020−2023 гг.
+            <br>
+            Проект согласован с национальными целями: сохранение населения, здоровье и благополучие людей; комфортная и безопасная среда для жизни, а также с Национальной стратегией повышения финансовой грамотности в Российской Федерации.
+
+        div(class="py-10 px-5 mx-auto max-w-[760px] font-extralight text-left text-[16px] md:text-[18px] lg:text-[20px] ").
+            Материалы учебного онлайн-курса «Основы финансовой грамотности» подготовлены в соответствии с единой рамкой компетенций по финансовой грамотности и представляют научно-практическую ценность для реализации комплексного компетентного подхода в процессе подготовки студентов средних профессиональных и высших образовательных организаций, бакалавров и магистров всех форм обучения и направлений подготовки, обучающихся старших классов и педагогов общеобразовательных организаций, слушателей программ профессиональной переподготовки и повышения квалификации и широкой аудитории.
+            <br>
+            В подготовке теоретических и практических материалов по разделам приняли участие преподаватели кафедры финансов и экономической безопасности ФГБОУ ВО «Вятский государственный университет».
+
+        div(class="py-10 px-5 mx-auto max-w-[760px] font-extralight text-left text-[16px] md:text-[18px] lg:text-[20px]")
+            div(class="font-bold") Основные разделы курса охватывают важнейшие вопросы в сфере финансовой грамотности и финансового образования:
+            ul(class="list-disc list-inside")
+                li(class="") Раздел 1 «Основы экономики и финансовой системы»
+                li(class="") Раздел 2 «Расчетно-кассовые операции и современные платежные технологии»
+                li(class="") Раздел 3 «Депозиты и кредиты»
+                li(class="") Раздел 4 «Финансовые рынки и основы инвестирования»
+                li(class="") Раздел 5 «Налоги и налогообложение»
+                li(class="") Раздел 6 «Бюджетная система и пенсионное обеспечение»
+                li(class="") Раздел 7 «Основы страхования»
+                li(class="") Раздел 8 «Основы предпринимательской деятельности»
+                li(class="") Раздел 9 «Финансовая безопасность и защита прав потребителей и финансовых услуг»
+
+        div(class="py-10 mx-auto max-w-[760px]")
+            iframe(class="aspect-video" width='100%' src='https://www.youtube.com/embed/LFL2cuG8NpA?si=pEzocX722qvEjV23' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen='')
+
+        div(class="py-10 mx-auto max-w-[1160]")
+            div(class="bg-black h-[1px] w-full")
+            div(class="text-center py-5 font-extralight text-[26px] md:text-[30px] lg:text-[38px]")
+                div(class="") Онлайн-курсы Центра доступны на
+                a(class="" href="https://open.vyatsu.ru/fingram") Образовательном маркетплейсе ВятГУ
+            div(class="bg-black h-[1px] w-full")
