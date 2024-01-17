@@ -17,4 +17,8 @@ https://kardachh.github.io/vyatsu-web/
         - https://kardachh.github.io/vyatsu-web/expert/news/example1/
 3. Региональный центр Финансовой грамотности Кировской области
     - https://kardachh.github.io/vyatsu-web/rcfg43/
-        - http://localhost:63342/vyatsu-web/rcfg43/projects/online-kurs.html
+        - https://kardachh.github.io/vyatsu-web/rcfg43/projects/online-kurs.html
+        - https://kardachh.github.io/vyatsu-web/rcfg43/projects/debaty.html
+        - https://kardachh.github.io/vyatsu-web/rcfg43/projects/shkola-finansovoy-bezopasnoti.html
+        - https://kardachh.github.io/vyatsu-web/rcfg43/projects/research.html
+        - https://kardachh.github.io/vyatsu-web/rcfg43/news
