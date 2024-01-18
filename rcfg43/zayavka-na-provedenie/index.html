@@ -1,0 +1,360 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>ЗАЯВКА НА ПРОВЕДЕНИЕ МЕРОПРИЯТИЯ ПО ФИНАНСОВОЙ ГРАМОТНОСТИ</title>
+  </head>
+  <link href="/vyatsu-web/output.css" rel="stylesheet"/>
+  <!-- Production-->
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <body class="font-[Arial,sans-serif'] text-black">
+    <header class="z-30 lg:fixed bg-white w-full min-h-[100px] px-10 flex flex-col lg:flex-row items-center justify-between"><a class="py-10 lg:py-0" href="/vyatsu-web/rcfg43"><img class="max-w-none w-[200px]" src="/vyatsu-web/rcfg43/img/logo.png"/></a>
+      <div class="flex flex-col lg:flex-row justify-center items-center flex-wrap gap-x-6 gap-y-4 lg:gap-y-0 py-10 lg:py-0 text-[#02a9ea] text-[15px] font-normal uppercase text-center"><a href="/vyatsu-web/rcfg43/#about">О центре</a><a href="/vyatsu-web/rcfg43/#projects">Проекты</a><a href="/vyatsu-web/rcfg43/#news">Новости</a><a class="nav__link-with-popup_events" href="">Мероприятия</a><a class="nav__link-with-popup_useful" href="">Полезное</a><a href="#contacts">Центр финансовых консультаций</a><a href="#contacts">Контакты</a><a href="#contacts">Поиск</a></div>
+      <div class="ml-0 lg:ml-20">
+        <svg class="t-sociallinks__svg" role="presentation" width="30px" height="30px" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50ZM25 34c.406 19.488 10.15 31.2 27.233 31.2h.968V54.05c6.278.625 11.024 5.216 12.93 11.15H75c-2.436-8.87-8.838-13.773-12.836-15.647C66.162 47.242 71.783 41.62 73.126 34h-8.058c-1.749 6.184-6.932 11.805-11.867 12.336V34h-8.057v21.611C40.147 54.362 33.838 48.304 33.556 34H25Z" fill="#02a9ea"></path>
+        </svg>
+      </div>
+    </header>
+    <!-- блок для смещения остальной страницы-->
+    <div class="min-h-[100px] hidden lg:block"></div>
+    <!-- поле поиска-->
+    <div class="fixed z-50 top-0 max-h-0 overflow-hidden bg-white flex justify-center items-center shadow-md w-full h-full transition-all" id="search-field">
+      <div class="flex items-center w-2/3 relative">
+        <div class="absolute inset-y-0 start-0 flex items-center pointer-events-none ps-2">
+          <svg class="t985__search-icon t-search-widget__search-icon" role="presentation" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle r="7.93388" transform="matrix(0.715639 0.698471 -0.715639 0.698471 18.5859 11.7816)" stroke-width="1.0" stroke="#b6b6b6"></circle>
+            <line y1="-0.5" x2="9.17531" y2="-0.5" transform="matrix(-0.715635 0.698474 -0.715635 -0.698474 12.75 16.9609)" stroke-width="1.0" stroke="#b6b6b6"></line>
+          </svg>
+        </div>
+        <input class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block ps-10 focus:ring-blue-500 focus:border-blue-500 p-5 w-5/6" id="input-group-1" type="text" placeholder="налоги"/>
+        <div class="cursor-pointer ml-10" id="close-search-field-btn">
+          <svg role="presentation" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.754014 27.4806L27.0009 1.32294" stroke="black"></path>
+            <path d="M26.9688 27.5665L0.757956 1.39984" stroke="black"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!-- поиск кнопка-->
+    <div class="fixed z-40 top-[100px] right-10 w-10 lg:w-20 h-10 lg:h-20 border border-[#02a9ea] rounded-full overflow-hidden cursor-pointer hover:scale-110 transition" id="show-search-field-btn">
+      <div class="absolute w-full h-full bg-white opacity-70"></div>
+      <svg class="absolute w-[40px] h-[40px] lg:w-[80px] lg:h-[80px]" role="presentation" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16.1523 48.1638L27.4577 36.8613" stroke="#02a9ea" stroke-width="1.0" stroke-linecap="square"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M44.6301 19.5989C49.2698 24.2386 49.2698 31.7618 44.6301 36.4015C39.9903 41.0413 32.4672 41.0413 27.8274 36.4015C23.1877 31.7618 23.1877 24.2386 27.8274 19.5989C32.4672 14.9592 39.9903 14.9592 44.6301 19.5989Z" stroke="#02a9ea" stroke-width="1.0"></path>
+        <path d="M40.6838 24.9392C42.6089 26.8643 42.5674 30.0269 40.5911 32.0032" stroke="#02a9ea" stroke-width="1.0"></path>
+      </svg>
+    </div>
+    <script>
+      tippy('.nav__link-with-popup_events', {
+          theme: 'custom-white', allowHTML: true, interactive: true, hideOnClick: false, // offset:[0,40],
+          content: `
+                      <div class="relative">
+                          <div class="bg-white text-[#02a9ea] normal-case text-center">
+                              <ul class="space-y-5">
+                                  <li>
+                                      <a href="/vyatsu-web/rcfg43/activities">Мероприятия</a>
+                                  </li>
+                                  <li>
+                                      <a href="/vyatsu-web/rcfg43/zayavka-na-provedenie">Заявка на<br>проведение<br>мероприятия</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+      
+                  `
+      })
+      
+      tippy('.nav__link-with-popup_useful', {
+          theme: 'custom-white', allowHTML: true, interactive: true, hideOnClick: false, // offset:[0,40],
+          content: `
+                          <div class="bg-white text-[#02a9ea] normal-case text-center">
+                              <ul class="space-y-5">
+                                  <li>
+                                      <a href="/vyatsu-web/rcfg43">Материалы по финансовой грамотности</a>
+                                  </li>
+                                  <li>
+                                      <a href="/vyatsu-web/rcfg43">Библиотека изданий РЦФГ Кировской области</a>
+                                  </li>
+                                  <li>
+                                      <a href="/vyatsu-web/rcfg43">Полезные ссылки</a>
+                                  </li>
+                                  <li>
+                                      <a href="/vyatsu-web/rcfg43">Материалы от УФНС России</a>
+                                  </li>
+                                  <li>
+                                      <a href="/vyatsu-web/rcfg43">Материалы от Банка России</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      `
+      })
+      
+      const toggleSearchBar = () => {
+          document.getElementById("search-field").classList.toggle("max-h-0")
+          document.getElementById("search-field").classList.toggle("max-h-[120px]")
+      }
+      
+      const addEvents = () => {
+          document.getElementById("show-search-field-btn").addEventListener("click", toggleSearchBar);
+          document.getElementById("close-search-field-btn").addEventListener("click", toggleSearchBar);
+      }
+      
+      addEvents()
+    </script>
+    <!-- pc-->
+    <div class="w-full h-[calc(100%-100px)] relative overflow-hidden hidden lg:block">
+      <div class="h-full absolute min-w-[920px] w-2/3 right-0 bg-no-repeat bg-center bg-cover" style="background-image: url('/vyatsu-web/rcfg43/img/zayavka-na-provedenie.jpeg')"></div>
+      <div class="bg-white rotate-[30deg] absolute top-1/2 left-0 transform -translate-x-1/2 -translate-y-1/2 w-[100%] h-[300%]"></div>
+      <div class="bg-white rotate-[30deg] absolute top-1/2 -right-[160%] transform -translate-x-1/2 -translate-y-1/2 w-[100%] h-[300%]"></div>
+      <div class="h-full absolute w-1/3 left-24">
+        <div class="absolute top-[50%] -translate-y-1/2">
+          <div class="text-[62px] text-[rgb(2,169,234)] font-semibold leading-[1.23]">ЗАЯВКА<br>НА ПРОВЕДЕНИЕ МЕРОПРИЯТИЯ ПО ФИНАНСОВОЙ ГРАМОТНОСТИ</div>
+        </div>
+      </div>
+    </div>
+    <!-- mobile-->
+    <div class="lg:hidden px-5 py-10">
+      <div class="text-[62px] text-[rgb(2,169,234)] text-center font-semibold leading-[1.23]">ЗАЯВКА<br>НА ПРОВЕДЕНИЕ МЕРОПРИЯТИЯ ПО ФИНАНСОВОЙ ГРАМОТНОСТИ</div><img class="mt-10 w-full" src="/vyatsu-web/rcfg43/img/zayavka-na-provedenie.jpeg"/>
+    </div>
+    <div class="mx-auto max-w-[960px] text-center pt-20 px-5">
+      <div class="text-[30px] md:text-[38px] lg:text-[42px] text-[rgb(2,169,234)] leading-[1.23]">Заполните форму и мы свяжемся с Вами</div>
+    </div>
+    <div class="mx-auto max-w-[760px] py-10 px-5">
+      <form action="#" method="POST">
+        <!-- inputs-->
+        <div>
+          <!-- input-1-->
+          <div class="mb-5">
+            <div class="pb-2 font-extralight text-base lg:text-[20px]">
+              <label for="input-1">Ваше ФИО</label>
+            </div>
+            <div class="border border-[rgb(2,169,234)] rounded-full px-5 py-4" id="input-1">
+              <input class="w-full focus:outline-none" placeholder="Иванов Иван Иванович"/>
+            </div>
+          </div>
+          <!-- input-2-->
+          <div class="mb-5">
+            <div class="pb-2 font-extralight text-base lg:text-[20px]">
+              <label for="input-2">Профиль организации</label>
+            </div>
+            <div class="border border-[rgb(2,169,234)] rounded-full px-5 py-4 relative flex" id="input-2">
+              <select class="w-full appearance-none focus:outline-none">
+                <option value="value">Выберите вариант из списка...</option>
+                <option value="школа">школа</option>
+                <option value="спо">спо</option>
+                <option value="вуз">вуз</option>
+                <option value="учреждение дополнительного образования и проч. ">учреждение дополнительного образования и проч.</option>
+                <option value="учреждение социального обслуживания ">учреждение социального обслуживания</option>
+                <option value="учреждение культуры (библиотека и др.) ">учреждение культуры (библиотека и др.)</option>
+                <option value="иная организация (укажу в следующем поле)">иная организация (укажу в следующем поле)</option>
+              </select>
+              <svg class="forced-colors:hidden pointer-events-none z-10 right-10 absolute h-4 w-4 self-center justify-self-end" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+          </div>
+          <!-- input-3-->
+          <div class="mb-5">
+            <div class="pb-2 font-extralight text-base lg:text-[20px]">
+              <label for="input-3">Если выбрали «Иная» в прошлом поле</label>
+            </div>
+            <div class="border border-[rgb(2,169,234)] rounded-full px-5 py-4" id="input-3">
+              <input class="w-full focus:outline-none" placeholder="НКО"/>
+            </div>
+          </div>
+          <!-- input-4-->
+          <div class="mb-5">
+            <div class="pb-2 font-extralight text-base lg:text-[20px]">
+              <label for="input-4">Наименование организации (учреждения)</label>
+            </div>
+            <div class="border border-[rgb(2,169,234)] rounded-full px-5 py-4" id="input-4">
+              <input class="w-full focus:outline-none" placeholder="ФГБОУ ВО «Вятский государственный университет»"/>
+            </div>
+          </div>
+          <!-- input-5-->
+          <div class="mb-5">
+            <div class="pb-2 font-extralight text-base lg:text-[20px]">
+              <label for="input-5">Ваша должность</label>
+            </div>
+            <div class="border border-[rgb(2,169,234)] rounded-full px-5 py-4" id="input-5">
+              <input class="w-full focus:outline-none" placeholder="Методист"/>
+            </div>
+          </div>
+          <!-- input-6-->
+          <div class="mb-5">
+            <div class="pb-2 font-extralight text-base lg:text-[20px]">
+              <label for="input-6">Тип мероприятия по финансовой грамотности</label>
+            </div>
+            <div class="border border-[rgb(2,169,234)] rounded-full px-5 py-4 relative flex" id="input-6">
+              <select class="w-full appearance-none focus:outline-none">
+                <option value="" style="color:#000000;">Выберите вариант из списка...</option>
+                <option value="Открытая лекция" style="color:#000000;">Открытая лекция</option>
+                <option value="Семинар" style="color:#000000;">Семинар</option>
+                <option value="Деловая игра" style="color:#000000;">Деловая игра</option>
+                <option value="Консультация" style="color:#000000;">Консультация</option>
+                <option value="Иное (укажу в следующем поле)" style="color:#000000;">Иное (укажу в следующем поле)</option>
+              </select>
+              <svg class="forced-colors:hidden pointer-events-none z-10 right-10 absolute h-4 w-4 self-center justify-self-end" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+          </div>
+          <!-- input-7-->
+          <div class="mb-5">
+            <div class="pb-2 font-extralight text-base lg:text-[20px]">
+              <label for="input-7">Если выбрали «Иное» в прошлом поле</label>
+            </div>
+            <div class="border border-[rgb(2,169,234)] rounded-full px-5 py-4" id="input-7">
+              <input class="w-full focus:outline-none" placeholder=""/>
+            </div>
+          </div>
+          <!-- input-8-->
+          <div class="mb-5">
+            <div class="pb-2 font-extralight text-base lg:text-[20px]">
+              <label for="input-8">Категория</label>
+            </div>
+            <div class="border border-[rgb(2,169,234)] rounded-full px-5 py-4 relative flex" id="input-8">
+              <select class="w-full appearance-none focus:outline-none">
+                <option value="" style="color:#000000;">Выберите вариант из списка...</option>
+                <option value="Дошкольники" style="color:#000000;">Дошкольники</option>
+                <option value="Школьники (начальная школа), " style="color:#000000;">Школьники (начальная школа), </option>
+                <option value="среднее звено, " style="color:#000000;">среднее звено, </option>
+                <option value="старшие классы " style="color:#000000;">старшие классы </option>
+                <option value="Воспитанники детских домов (интернатов) " style="color:#000000;">Воспитанники детских домов (интернатов) </option>
+                <option value="Многодетные семьи " style="color:#000000;">Многодетные семьи </option>
+                <option value="Социальные категории (лица с ОВЗ и проч.) " style="color:#000000;">Социальные категории (лица с ОВЗ и проч.) </option>
+                <option value="Работающие граждане " style="color:#000000;">Работающие граждане </option>
+                <option value="Граждане предпенсионного и пенсионного возраста" style="color:#000000;">Граждане предпенсионного и пенсионного возраста</option>
+                <option value="Иные категории (укажу в следующем поле)" style="color:#000000;">Иные категории (укажу в следующем поле)</option>
+              </select>
+              <svg class="forced-colors:hidden pointer-events-none z-10 right-10 absolute h-4 w-4 self-center justify-self-end" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+          </div>
+          <!-- input-9-->
+          <div class="mb-5">
+            <div class="pb-2 font-extralight text-base lg:text-[20px]">
+              <label for="input-9">Если выбрали «Иные категории» в прошлом поле</label>
+            </div>
+            <div class="border border-[rgb(2,169,234)] rounded-full px-5 py-4" id="input-9">
+              <input class="w-full focus:outline-none" placeholder=""/>
+            </div>
+          </div>
+          <!-- input-10-->
+          <div class="mb-5">
+            <div class="pb-2 font-extralight text-base lg:text-[20px]">
+              <div for="input-10">Тематика мероприятия</div>
+              <div class="text-sm text-[#0f0f0f]" for="input-10">Можно выбрать несколько ответов</div>
+            </div>
+            <ul class="space-y-3">
+              <li>
+                <label for="input-10-1">
+                  <input class="h-4 w-4 mr-5 after:border-[rgb(2,169,234)] after:bg-white border" id="input-10-1" type="checkbox"/>общие финансовые категории
+                </label>
+              </li>
+              <li>
+                <label for="input-10-2">
+                  <input class="h-4 w-4 mr-5 after:border-[rgb(2,169,234)] after:bg-white border" id="input-10-2" type="checkbox"/>финансовое планирование (доходы и расходы)
+                </label>
+              </li>
+              <li>
+                <label for="input-10-3">
+                  <input class="h-4 w-4 mr-5 after:border-[rgb(2,169,234)] after:bg-white border" id="input-10-3" type="checkbox"/>деньги и денежное обращение
+                </label>
+              </li>
+              <li>
+                <label for="input-10-4">
+                  <input class="h-4 w-4 mr-5 after:border-[rgb(2,169,234)] after:bg-white border" id="input-10-4" type="checkbox"/>кредитование
+                </label>
+              </li>
+              <li>
+                <label for="input-10-5">
+                  <input class="h-4 w-4 mr-5 after:border-[rgb(2,169,234)] after:bg-white border" id="input-10-5" type="checkbox"/>сбережения (депозиты)
+                </label>
+              </li>
+              <li>
+                <label for="input-10-6">
+                  <input class="h-4 w-4 mr-5 after:border-[rgb(2,169,234)] after:bg-white border" id="input-10-6" type="checkbox"/>цифровые финансовые технологии и банковские карты
+                </label>
+              </li>
+              <li>
+                <label for="input-10-7">
+                  <input class="h-4 w-4 mr-5 after:border-[rgb(2,169,234)] after:bg-white border" id="input-10-7" type="checkbox"/>инвестиции
+                </label>
+              </li>
+              <li>
+                <label for="input-10-8">
+                  <input class="h-4 w-4 mr-5 after:border-[rgb(2,169,234)] after:bg-white border" id="input-10-8" type="checkbox"/>валютные активы
+                </label>
+              </li>
+              <li>
+                <label for="input-10-9">
+                  <input class="h-4 w-4 mr-5 after:border-[rgb(2,169,234)] after:bg-white border" id="input-10-9" type="checkbox"/>личная финансовая безопасность и защита прав потребителей финансовых услуг
+                </label>
+              </li>
+              <li>
+                <label for="input-10-10">
+                  <input class="h-4 w-4 mr-5 after:border-[rgb(2,169,234)] after:bg-white border" id="input-10-10" type="checkbox"/>иные вопросы (указать)
+                </label>
+              </li>
+            </ul>
+          </div>
+          <!-- input-11-->
+          <div class="mb-5">
+            <div class="pb-2 font-extralight text-base lg:text-[20px]">
+              <label for="input-11"> </label>
+            </div>
+            <div class="border border-[rgb(2,169,234)] rounded-full px-5 py-4" id="input-11">
+              <input class="w-full focus:outline-none" placeholder="Если выбрали «Иные вопросы» в прошлом поле"/>
+            </div>
+          </div>
+          <!-- input-12-->
+          <div class="mb-5">
+            <div class="pb-2 font-extralight text-base lg:text-[20px]">
+              <label for="input-12">Рекомендуемые даты мероприятия</label>
+            </div>
+            <div class="border border-[rgb(2,169,234)] rounded-full px-5 py-4" id="input-12">
+              <input class="w-full focus:outline-none" placeholder="1 - 20 сентября 2024"/>
+            </div>
+          </div>
+          <!-- input-13-->
+          <div class="mb-5">
+            <div class="pb-2 font-extralight text-base lg:text-[20px]">
+              <label for="input-13">Ваш email</label>
+            </div>
+            <div class="border border-[rgb(2,169,234)] rounded-full px-5 py-4" id="input-13">
+              <input class="w-full focus:outline-none" placeholder="exampl@mmail.ru"/>
+            </div>
+          </div>
+          <!-- input-14-->
+          <div class="mb-5">
+            <div class="pb-2 font-extralight text-base lg:text-[20px]">
+              <label for="input-14">Ваш телефон для связи</label>
+            </div>
+            <div class="border border-[rgb(2,169,234)] rounded-full px-5 py-4" id="input-14">
+              <input class="w-full focus:outline-none" placeholder="+7 (999) 999-99-99"/>
+            </div>
+          </div>
+          <!-- input-15-->
+          <div class="mb-5">
+            <label for="input-10-1">
+              <input class="h-4 w-4 mr-5 after:border-[rgb(2,169,234)] after:bg-white border" id="input-10-1" type="checkbox"/>Я согласен с политикой конфеденциальности
+            </label>
+          </div>
+          <!-- input-16-->
+          <div class="mt-10 flex justify-center items-center mb-10">
+            <button class="bg-[rgb(2,169,234)] cursor-pointer flex justify-center items-center text-white px-10 py-4 rounded-full w-full lg:w-auto" type="submit">Отправить</button>
+          </div>
+          <!---->
+          <div class="text-center" field="text">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь <a href="https://rcfg43.ru/privacy" rel="noreferrer noopener" target="_blank">c политикой конфиденциальности</a></div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

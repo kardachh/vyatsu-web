@@ -22,3 +22,6 @@ https://kardachh.github.io/vyatsu-web/
         - https://kardachh.github.io/vyatsu-web/rcfg43/projects/shkola-finansovoy-bezopasnoti.html
         - https://kardachh.github.io/vyatsu-web/rcfg43/projects/research.html
         - https://kardachh.github.io/vyatsu-web/rcfg43/news
+        - https://kardachh.github.io/vyatsu-web/rcfg43/activities
+        - https://kardachh.github.io/vyatsu-web/rcfg43/zayavka-na-provedenie
+        - https://kardachh.github.io/vyatsu-web/rcfg43/privacy

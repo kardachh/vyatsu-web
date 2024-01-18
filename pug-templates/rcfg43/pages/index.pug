@@ -13,8 +13,9 @@ html(lang="en")
         include  ../templates/block-title
         include  ../templates/about
         include  ../templates/projects
-        +title("НОВОСТИ")
-        include  ../templates/news_4
+        div(id="news")
+            +title("НОВОСТИ")
+            include  ../templates/news_4
         +title("Полезное")
         include  ../templates/useful
         +title_sm("МАТЕРИАЛЫ ПО ФИНАНСОВОЙ ГРАМОТНОСТИ")
