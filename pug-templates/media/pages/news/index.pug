@@ -5,6 +5,19 @@ html(lang="en")
             content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
         title Студенческий медиацентр ВятГУ
         include ../../templates/imports
-    body(class="bg-gray-900 font-media")
+    body(class="bg-white font-media")
         include ../../templates/header
-        
+        //- block #1
+        div(class="h-screen lg:h-[calc(100vh-80px)] lg:mt-[80px] flex items-center justify-center relative")
+            div(class="absolute h-full w-full top-0 left-0 bg-no-repeat bg-center bg-cover"
+                style="background-image: url('/vyatsu-web/media/img/news.png')")
+            div(class="absolute h-full w-full bg-[#00000040]")
+            div(class="max-w-[1200px] mx-auto absolute h-full w-full")
+                div(class="absolute bottom-20 text-white space-y-5")
+                    div(class="bg-[rgba(139,74,204,1)] min-w-[520px] text-[28px] lg:text-[36px] font-black p-4 leading-10") НОВОСТИ by<br>СТУДЕНЧЕСКИЙ<br>МЕДИАЦЕНТР ВЯТГУ
+                    div(class="bg-[rgba(92,135,214,1)] text-[28px] lg:text-base font-thin p-4 w-fit") Студенческий взгляд на события недели и не только.<br>Крайний на сегодня выпуск можно посмотреть ниже:
+        //- block #2
+        div(class="bg-[rgba(139,74,204,1)]  py-20")
+            div(class="")
+                iframe(class="aspect-video mx-auto w-full lg:w-[940px]" src='https://www.youtube.com/embed/OL12H0Cf7gA' title='СТУДЕНЧЕСКИЕ НОВОСТИ ВятГУ от 30.04.2021' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen)
+        include ../../templates/footer    
