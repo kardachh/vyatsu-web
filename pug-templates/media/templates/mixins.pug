@@ -1,0 +1,8 @@
+mixin longread_tile(link, title, description, imgSrc, rowspan=1, colspan=1)
+    a(href=`${link}` class=`h-full w-full relative lg:col-span-${colspan} lg:row-span-${rowspan}`)
+        div(class=`bg-no-repeat bg-center bg-cover aspect-[16/12]` style=`background-image: url('${imgSrc}')`)
+            //- img(src=imgSrc class="w-full h-full object-cover")
+            div(class="absolute w-full h-full bg-gradient-to-b from-[rgba(22,21,37,0.6)] to-[rgb(22,21,37)]")
+            div(class="absolute w-full h-full flex flex-col justify-center items-center text-center px-10")
+                div(class="text-[#8b4acc] text-[28px] lg:text-[36px] font-bold")=title
+                div(class="text-[#5c87d6] text-[12px] lg:text-base font-semibold pt-4")=description
