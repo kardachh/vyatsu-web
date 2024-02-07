@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
     <title>НОВОСТИ by Студенческий медиацентр ВятГУ</title>
     <link href="/vyatsu-web/output.css" rel="stylesheet"/>
+    <link href="/vyatsu-web/media/styles.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body class="bg-white font-media">
     <header class="lg:h-[80px] bg-[rgba(22,21,37,1)] w-full px-10 flex flex-col items-center justify-between lg:fixed top-0 lg:flex-row z-50"><a class="py-10 lg:py-0" href="/vyatsu-web/media"><img class="w-[130px] h-[40px]" src="/vyatsu-web/media/img/logo.png"/></a>
@@ -41,8 +44,8 @@
         <div class="flex justify-center lg:justify-start items-center lg:row-start-1">
           <div class="text-center lg:text-left">© 2022 Студенческий Медиацентр ВятГУ, Управление информационной работы и коммуникаций ВятГУ</div>
         </div>
-        <div class="flex justify-center lg:justify-end items-center"> 
-          <div class="mr-3">Вернутся к началу</div><span class="t452__icon">
+        <div class="flex justify-center lg:justify-end items-center cursor-pointer" onclick="scrollToTop()"> 
+          <div class="mr-3" id="to-top">Вернутся к началу</div><span class="t452__icon">
             <svg role="presentation" width="5px" height="17px" viewBox="0 0 6 20" version="1.1">
               <defs></defs>
               <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"></g>
@@ -53,5 +56,13 @@
         </div>
       </div>
     </footer>
+    <script>
+      function scrollToTop() {
+      window.scrollTo({
+          top: 0,
+          behavior: 'smooth' // Optional: Smooth scrolling behavior
+      });
+      }
+    </script>
   </body>
 </html>

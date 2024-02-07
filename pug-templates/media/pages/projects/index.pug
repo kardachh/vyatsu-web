@@ -1,0 +1,50 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+        title Проекты
+        include ../../templates/imports
+        include ../../templates/mixins
+    body(class="bg-[#161525] font-media")
+        include ../../templates/header
+        //- block #1
+        div(class="h-[calc(90vh-80px)] lg:mt-[80px] overflow-x-hidden swiper-container relative")
+            div(class="swiper-wrapper w-full relative")
+                div(class="swiper-slide relative")
+                    div(class="absolute h-full w-full top-0 left-0 bg-no-repeat bg-center bg-cover" 
+                        style="background-image: url('/vyatsu-web/media/img/projects/neravnodushnie.jpeg')")
+                    div(class="absolute h-full w-full top-0 left-0 bg-gradient-to-b from-[rgba(22,21,37,0.6)] to-[rgb(22,21,37)]")
+                    div(class="absolute h-full w-full top-0 left-0 flex flex-col justify-center items-center")
+                        div(class="text-[#8b4acc] text-5xl lg:text-8xl font-bold text-center px-20") #Неравнодушные и София Алексадрова
+                        a(href="" class="mt-10 px-5 py-3 rounded-3xl bg-[#161525] text-[#5c87d6] outline outline-[#8b4acc]") Перейти на страницу проекта
+                div(class="swiper-slide relative")
+                    div(class="absolute h-full w-full top-0 left-0 bg-no-repeat bg-center bg-cover" 
+                        style="background-image: url('/vyatsu-web/media/img/projects/saltikiada.jpeg')")
+                    div(class="absolute h-full w-full top-0 left-0 bg-gradient-to-b from-[rgba(22,21,37,0.6)] to-[rgb(22,21,37)]")
+                    div(class="absolute h-full w-full top-0 left-0 flex flex-col justify-center items-center")
+                        div(class="text-[#8b4acc] text-5xl lg:text-8xl font-bold text-center px-20") Салтыкиада
+                        a(href="" class="mt-10 px-5 py-3 rounded-3xl bg-[#161525] text-[#5c87d6] outline outline-[#8b4acc]") Перейти на страницу проекта
+            //- Add Navigation
+            div(class="swiper-button-next !text-white")
+            div(class="swiper-button-prev !text-white")
+            //- Add Pagination
+            div(class="swiper-pagination !text-white")
+        include ../../templates/footer
+script.
+    var mySwiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
