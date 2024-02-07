@@ -57,8 +57,8 @@
         <div class="flex justify-center lg:justify-start items-center lg:row-start-1">
           <div class="text-center lg:text-left">© 2022 Студенческий Медиацентр ВятГУ, Управление информационной работы и коммуникаций ВятГУ</div>
         </div>
-        <div class="flex justify-center lg:justify-end items-center"> 
-          <div class="mr-3">Вернутся к началу</div><span class="t452__icon">
+        <div class="flex justify-center lg:justify-end items-center cursor-pointer" onclick="scrollToTop()"> 
+          <div class="mr-3" id="to-top">Вернутся к началу</div><span class="t452__icon">
             <svg role="presentation" width="5px" height="17px" viewBox="0 0 6 20" version="1.1">
               <defs></defs>
               <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"></g>
@@ -69,5 +69,13 @@
         </div>
       </div>
     </footer>
+    <script>
+      function scrollToTop() {
+      window.scrollTo({
+          top: 0,
+          behavior: 'smooth' // Optional: Smooth scrolling behavior
+      });
+      }
+    </script>
   </body>
 </html>
