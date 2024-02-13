@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     fontFamily: {
       expert: ["Circe", "Arial", "sans-serif"],
-      media: ["PRNOVA", "Arial", "sans-serif"],
+      media: ["Proxima Nova Cn Rg", "sans-serif"],
     },
     extend: {},
   },
