@@ -29,13 +29,15 @@ html(lang="en")
             p(class="mx-auto max-w-[760px] text-left text-[20px]") Такие и подобные высказывания все чаще звучат по радио, телевидению, появляются в интернете. Специалисты говорят о проблеме огрубления речи современных русских людей, расшатывании норм литературного языка, смешении официального и неофициального общения, книжных и разговорных элементов, проникновении в русский язык слишком большого количества иноязычных слов, падении языковой культуры и языкового вкуса общества в целом и т.п. Этим проблемам посвящаются научные исследования, статьи и монографии. Об этом периодически говорят, спорят, дискутируют в СМИ, т.е. очевидно, что общество обеспокоено состоянием современного русского языка.
             div(class="mx-auto max-w-[1160px] py-10 text-center text-[22px] lg:text-[28px]") Задумываются ли об этом жители г. Кирова и разделяют ли они общую озабоченность общества проблемами языка?
         div(class="mx-auto max-w-[960px]")
-            img(src="/vyatsu-web/media/img/longreads/myegoteryaem/3.webp", alt="")
+            img(src="/vyatsu-web/media/img/longreads/myegoteryaem/3.webp" alt="")
         div(class="px-5 py-10")
             div(class="text-center text-[20px]") Результаты опроса (опрошено более 50 человек в возрасте от 16 до 46 лет)
         //- list of questions
         div(class="px-5 py-10")
             //- 1
-            +question("Вопрос: Как вы оцениваете состояние современного русского языка?")
+            +quote(
+                "Вопрос: Как вы оцениваете состояние современного русского языка?",
+                "/vyatsu-web/media/img/longreads/myegoteryaem/mini-logo.png")
             +answer()
                 div(class="")
                     ul(class="space-y-5")
@@ -45,7 +47,9 @@ html(lang="en")
                         li <strong>2%</strong>  – язык и развивается, и деградирует.
                     div(class="mt-5") Как видим, большинство опрошенных кировчан ощущают, что в языке происходят изменения, при этом большая часть оценивает их отрицательно (что соответствует настроениям в обществе)
             //- 2
-            +question("Вопрос: Как вы считаете, зависит ли состояние русского языка лично от вас?")
+            +quote(
+                "Вопрос: Как вы считаете, зависит ли состояние русского языка лично от вас?",
+                "/vyatsu-web/media/img/longreads/myegoteryaem/mini-logo.png")
             +answer()
                 div(class="")
                     ul(class="space-y-5")
@@ -53,7 +57,9 @@ html(lang="en")
                         li <strong>6%</strong>  – нет, потому что нельзя повлиять на сложившуюся систему.
                     div(class="mt-5") Итак, кировчане осознают личную ответственность за то, в каком состоянии находится современный язык
             //- 3
-            +question("Вопрос: Какие вы можете назвать причины, которые привели к негативным явлениям в современном языке?")
+            +quote(
+                "Вопрос: Какие вы можете назвать причины, которые привели к негативным явлениям в современном языке?",
+                "/vyatsu-web/media/img/longreads/myegoteryaem/mini-logo.png")
             +answer()
                 div(class="")
                     ul(class="space-y-5")
@@ -63,25 +69,31 @@ html(lang="en")
                         li <strong>18%</strong> – бесконтрольный процесс заимствования, мода на все иноязычное и неприязнь ко всему «русскому»
                     div(class="mt-5") Опрошенные в целом указывают причины субъективного характера, т.е. все зависит от самого человека, а не от каких-то внешних обстоятельств
             //- 4
-            +question("Вопрос: Замечаете ли вы ошибки в написании текстов, рекламных баннеров, постов в социальных сетях?")
+            +quote(
+                "Вопрос: Замечаете ли вы ошибки в написании текстов, рекламных баннеров, постов в социальных сетях?",
+                "/vyatsu-web/media/img/longreads/myegoteryaem/mini-logo.png")
             +answer()
                 div(class="")
                     ul(class="grid grid-cols-2 gap-5")
                         li <strong>87%</strong> – да
                         li <strong>13%</strong>  – нет
             //- 5
-            +question("Вопрос: Исправляете ли Вы ошибки в речи других людей?")
+            +quote(
+                "Вопрос: Исправляете ли Вы ошибки в речи других людей?",
+                "/vyatsu-web/media/img/longreads/myegoteryaem/mini-logo.png")
             +answer()
                 div(class="")
                     div(class="flex justify-center")
-                        img(class="lg:w-2/3" src="/vyatsu-web/media/img/longreads/myegoteryaem/4.png", alt="")
+                        img(class="lg:w-2/3" src="/vyatsu-web/media/img/longreads/myegoteryaem/4.png" alt="")
                     ul(class="mt-5 space-y-5")
                         li <strong>51%</strong> – да;
                         li <strong>30%</strong>  – иногда, так как не все понимают; когда располагает ситуация; не всегда, потому что люди обижаются;
                         li <strong>16%</strong>  – нет.
                     div(class="mt-5") Кировчане, как оказалось, весьма внимательны, они обращают внимание на нарушения норм
             //- 6
-            +question("Вопрос: Следите ли вы за тем, как вы говорите или пишите?")
+            +quote(
+                "Вопрос: Следите ли вы за тем, как вы говорите или пишите?",
+                "/vyatsu-web/media/img/longreads/myegoteryaem/mini-logo.png")
             +answer()
                 div(class="")
                     ul(class="space-y-5")
@@ -89,9 +101,11 @@ html(lang="en")
                         li <strong>4%</strong>  – нет;
                         li <strong>1%</strong>  – Специально нет. Но некоторые правила, условия написания сами возникают в голове.
                 div(class="mt-10")
-                    img(class="lg:w-full" src="/vyatsu-web/media/img/longreads/myegoteryaem/5.jpg", alt="")
+                    img(class="lg:w-full" src="/vyatsu-web/media/img/longreads/myegoteryaem/5.jpg" alt="")
             //- 7
-            +question("Вопрос: Если вы сомневаетесь в каком-то словоупотреблении, обращаетесь ли вы к словарям и каким?")
+            +quote(
+                "Вопрос: Если вы сомневаетесь в каком-то словоупотреблении, обращаетесь ли вы к словарям и каким?",
+                "/vyatsu-web/media/img/longreads/myegoteryaem/mini-logo.png")
             +answer()
                 div(class="")
                     ul(class="space-y-5")
@@ -99,46 +113,46 @@ html(lang="en")
                         li <strong>23%</strong>  – нет.
                     div(class="my-5 text-center text-2xl lg:text-3xl") Слова, в которых чаще всего допускают ошибки
                 div(class="contents")
-                    img(class="lg:w-full" src="/vyatsu-web/media/img/longreads/myegoteryaem/6.png", alt="")
+                    img(class="lg:w-full" src="/vyatsu-web/media/img/longreads/myegoteryaem/6.png" alt="")
                 div(class="mt-5 grid grid-cols-2 gap-5 text-base lg:text-xl")
-                        ul()
-                            li() квартАл
-                            li() свЁкла
-                            li() звонИт
-                            li() газопровОд
-                            li() стирАльный
-                            li() избаловАть
-                            li() жалюзИ
-                            li() договОр
-                            li() новорождЁнный
-                            li() осуждЁнный
-                            li() включИшь
-                            li() срЕдства
-                            li() решИм
-                            li() ходАтайство
-                            li() обеспЕчение
-                            li() красИвее
-                            li() диспансЕр
-                        ul()
-                            li договор<u>ы</u>
-                            li бухгалтер<u>ы</u>
-                            li директор<u>а</u>
-                            li тренер<u>ы</u>
-                            li крем<u>ы</u>
-                            li помидор<u>ов</u>
-                            li яблок<u></u>
-                            li пара сапог<u></u>
-                            li пара носк<u>ов</u>
-                            li нет ясл<u>ей</u>
-                            li нет вафель<u></u>
-                            li нет свеч<u>ей</u>
-                            li нет очистк<u>ов</u>
-                            li нет туфель<u></u>
-                            li нет джинс<u>ов</u>
-                            li в об<u>е</u>их руках
-                            li хорош<u>ий</u> шампунь
-                            li бел<u>ый</u> тюль
-                            li килограмм мандарин<u>ов</u>
+                    ul()
+                        li() квартАл
+                        li() свЁкла
+                        li() звонИт
+                        li() газопровОд
+                        li() стирАльный
+                        li() избаловАть
+                        li() жалюзИ
+                        li() договОр
+                        li() новорождЁнный
+                        li() осуждЁнный
+                        li() включИшь
+                        li() срЕдства
+                        li() решИм
+                        li() ходАтайство
+                        li() обеспЕчение
+                        li() красИвее
+                        li() диспансЕр
+                    ul()
+                        li договор<u>ы</u>
+                        li бухгалтер<u>ы</u>
+                        li директор<u>а</u>
+                        li тренер<u>ы</u>
+                        li крем<u>ы</u>
+                        li помидор<u>ов</u>
+                        li яблок<u></u>
+                        li пара сапог<u></u>
+                        li пара носк<u>ов</u>
+                        li нет ясл<u>ей</u>
+                        li нет вафель<u></u>
+                        li нет свеч<u>ей</u>
+                        li нет очистк<u>ов</u>
+                        li нет туфель<u></u>
+                        li нет джинс<u>ов</u>
+                        li в об<u>е</u>их руках
+                        li хорош<u>ий</u> шампунь
+                        li бел<u>ый</u> тюль
+                        li килограмм мандарин<u>ов</u>
         div(class="px-5 py-10 mx-auto max-w-[760px]") 
             div(class="text-[38px] lg:text-[42px] text-center font-black") Таким образом,
             div(class="mt-5 space-y-10")
