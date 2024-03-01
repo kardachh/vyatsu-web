@@ -6,3 +6,22 @@ mixin longread_tile(link, title, description, imgSrc, rowspan=1, colspan=1)
             div(class="absolute w-full h-full flex flex-col justify-center items-center text-center px-10")
                 div(class="text-[#8b4acc] text-[28px] lg:text-[36px] font-bold")=title
                 div(class="text-[#5c87d6] text-[12px] lg:text-base font-semibold pt-4")=description
+
+mixin quote(text, img_path="",  author="", author_desc="")
+    div(class="mx-auto max-w-[960px] py-10")
+        div(class="border-2 border-black")
+        div(class="py-5 font-black text-[28px] italic")=text
+        div(style='overflow: hidden; width:100%; height:60px;')
+            svg(role='presentation' version='1.1' viewBox='0 0 1200 31.7' width='1200px' height='40px')
+                g
+                polygon(points='40,31.7 40,4 0,4 0,0 44,0 44,22.3 67.2,0 1200,0 1200,4 68.8,4 ')
+        div(class="flex items-center")
+            div(class="h-[80px] w-[80px] rounded-full overflow-hidden")
+                img(class="w-full h-full" src=img_path, alt="")
+            div(class="ml-5")
+                div(class="font-bold")=author
+                div()=author_desc
+
+mixin answer()
+    div(class="max-w-[760px] mx-auto text-[20px]")
+        block

@@ -1,0 +1,225 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+        title Мы его теряем?
+        include ../../../templates/imports
+        include ../../../templates/mixins
+    body(class="bg-white font-media")
+        include ../../../templates/header
+        div(class="h-screen lg:h-[calc(100vh-80px)] lg:mt-[80px] flex items-center justify-center relative")
+            div(class="absolute h-full w-full top-0 left-0 bg-no-repeat bg-center bg-cover"
+                style="background-image: url('/vyatsu-web/media/img/longreads/language.jpeg')")
+            div(class="absolute h-full w-full bg-[#00000040]")
+            div(class="max-w-[1200px] mx-auto absolute h-full w-full")
+                div(class="w-full h-full flex flex-col justify-center items-center text-white text-center")
+                    h1(class="text-4xl lg:text-8xl font-black p-4") Мы его теряем?
+                    div(class="mt-5 lg:mt-20 lg:text-[24px] font-black") Что происходит с русским языком: мнение кировчан
+        div(class="bg-white text-black pt-20 px-5")
+            div(class="flex flex-col  items-center")
+                h2(class="font-semibold text-[30px] text-center lg:text-[64px]") Современный русский язык, какой он?
+                p(class="mt-5 max-w-[760px] lg:text-[20px]") Многие замечают, что в современном русском языке происходят некие изменения, большая часть которых оценивается образованными людьми отрицательно. Студентка Вятского государственного университета <strong>Ольга Князева</strong>, которая является создателем и руководителем видеопроекта #РусскийДляВсех, решила выяснить, что об этом думают кировчане
+                img(class="py-20 max-w-[760px] w-full" src="/vyatsu-web/media/img/longreads/myegoteryaem/2-1.png")
+            div(class="flex justify-center py-10 w-full")
+                div(class="h-[1px] w-1/3 lg:w-[300px] bg-black")  
+            div(class="mx-auto max-w-[960px] text-center italic text-[26px] lg:text-[38px]") Мы уже перестали говорить по-русски! Скоро русский язык полностью заменится на английский! Язык ужасно загрязнён жаргоном! Русский язык деградирует! Везде царит безграмотность!
+            div(class="flex justify-center py-10 w-full")
+                div(class="h-[1px] w-1/3 lg:w-[300px] bg-black") 
+            p(class="mx-auto max-w-[760px] text-left text-[20px]") Такие и подобные высказывания все чаще звучат по радио, телевидению, появляются в интернете. Специалисты говорят о проблеме огрубления речи современных русских людей, расшатывании норм литературного языка, смешении официального и неофициального общения, книжных и разговорных элементов, проникновении в русский язык слишком большого количества иноязычных слов, падении языковой культуры и языкового вкуса общества в целом и т.п. Этим проблемам посвящаются научные исследования, статьи и монографии. Об этом периодически говорят, спорят, дискутируют в СМИ, т.е. очевидно, что общество обеспокоено состоянием современного русского языка.
+            div(class="mx-auto max-w-[1160px] py-10 text-center text-[22px] lg:text-[28px]") Задумываются ли об этом жители г. Кирова и разделяют ли они общую озабоченность общества проблемами языка?
+        div(class="mx-auto max-w-[960px]")
+            img(src="/vyatsu-web/media/img/longreads/myegoteryaem/3.webp" alt="")
+        div(class="px-5 py-10")
+            div(class="text-center text-[20px]") Результаты опроса (опрошено более 50 человек в возрасте от 16 до 46 лет)
+        //- list of questions
+        div(class="px-5 py-10")
+            //- 1
+            +quote(
+                "Вопрос: Как вы оцениваете состояние современного русского языка?",
+                "/vyatsu-web/media/img/longreads/myegoteryaem/mini-logo.png")
+            +answer()
+                div(class="")
+                    ul(class="space-y-5")
+                        li <strong>49%</strong> – язык деградирует;
+                        li <strong>33%</strong>  – язык развивается;
+                        li <strong>16%</strong>  – язык неизменен;
+                        li <strong>2%</strong>  – язык и развивается, и деградирует.
+                    div(class="mt-5") Как видим, большинство опрошенных кировчан ощущают, что в языке происходят изменения, при этом большая часть оценивает их отрицательно (что соответствует настроениям в обществе)
+            //- 2
+            +quote(
+                "Вопрос: Как вы считаете, зависит ли состояние русского языка лично от вас?",
+                "/vyatsu-web/media/img/longreads/myegoteryaem/mini-logo.png")
+            +answer()
+                div(class="")
+                    ul(class="space-y-5")
+                        li <strong>94%</strong> – да, потому что в процессе общения я сам решаю, следовать нормам или нет; да, потому что неверное употребление слов перенимается другими людьми и быстро распространяется; да, каждый человек, являясь носителем языка, непосредственно влияет на процесс его развития;
+                        li <strong>6%</strong>  – нет, потому что нельзя повлиять на сложившуюся систему.
+                    div(class="mt-5") Итак, кировчане осознают личную ответственность за то, в каком состоянии находится современный язык
+            //- 3
+            +quote(
+                "Вопрос: Какие вы можете назвать причины, которые привели к негативным явлениям в современном языке?",
+                "/vyatsu-web/media/img/longreads/myegoteryaem/mini-logo.png")
+            +answer()
+                div(class="")
+                    ul(class="space-y-5")
+                        li <strong>35%</strong> – равнодушие к проблемам языка, отсутствие интереса;
+                        li <strong>28%</strong> – падение общей культуры, пренебрежение нравственными эстетическими нормами, размывание в сознании говорящих границы между официальным и неофициальным общением, что приводит к неуместному использованию жаргона, сленга, просторечия;
+                        li <strong>19%</strong> – низкое качество образования, неправильная образовательная политика в области языка;
+                        li <strong>18%</strong> – бесконтрольный процесс заимствования, мода на все иноязычное и неприязнь ко всему «русскому»
+                    div(class="mt-5") Опрошенные в целом указывают причины субъективного характера, т.е. все зависит от самого человека, а не от каких-то внешних обстоятельств
+            //- 4
+            +quote(
+                "Вопрос: Замечаете ли вы ошибки в написании текстов, рекламных баннеров, постов в социальных сетях?",
+                "/vyatsu-web/media/img/longreads/myegoteryaem/mini-logo.png")
+            +answer()
+                div(class="")
+                    ul(class="grid grid-cols-2 gap-5")
+                        li <strong>87%</strong> – да
+                        li <strong>13%</strong>  – нет
+            //- 5
+            +quote(
+                "Вопрос: Исправляете ли Вы ошибки в речи других людей?",
+                "/vyatsu-web/media/img/longreads/myegoteryaem/mini-logo.png")
+            +answer()
+                div(class="")
+                    div(class="flex justify-center")
+                        img(class="lg:w-2/3" src="/vyatsu-web/media/img/longreads/myegoteryaem/4.png" alt="")
+                    ul(class="mt-5 space-y-5")
+                        li <strong>51%</strong> – да;
+                        li <strong>30%</strong>  – иногда, так как не все понимают; когда располагает ситуация; не всегда, потому что люди обижаются;
+                        li <strong>16%</strong>  – нет.
+                    div(class="mt-5") Кировчане, как оказалось, весьма внимательны, они обращают внимание на нарушения норм
+            //- 6
+            +quote(
+                "Вопрос: Следите ли вы за тем, как вы говорите или пишите?",
+                "/vyatsu-web/media/img/longreads/myegoteryaem/mini-logo.png")
+            +answer()
+                div(class="")
+                    ul(class="space-y-5")
+                        li <strong>95%</strong> – да;
+                        li <strong>4%</strong>  – нет;
+                        li <strong>1%</strong>  – Специально нет. Но некоторые правила, условия написания сами возникают в голове.
+                div(class="mt-10")
+                    img(class="lg:w-full" src="/vyatsu-web/media/img/longreads/myegoteryaem/5.jpg" alt="")
+            //- 7
+            +quote(
+                "Вопрос: Если вы сомневаетесь в каком-то словоупотреблении, обращаетесь ли вы к словарям и каким?",
+                "/vyatsu-web/media/img/longreads/myegoteryaem/mini-logo.png")
+            +answer()
+                div(class="")
+                    ul(class="space-y-5")
+                        li <strong>77%</strong> – да, к словарю С.И.Ожегова (34%); к словарю в интернете – Викисловарь, Грамота.ру, Академик (20%); к печатным орфографическим словарям (17%); к орфоэпическим словарям – (6%);
+                        li <strong>23%</strong>  – нет.
+                    div(class="my-5 text-center text-2xl lg:text-3xl") Слова, в которых чаще всего допускают ошибки
+                div(class="contents")
+                    img(class="lg:w-full" src="/vyatsu-web/media/img/longreads/myegoteryaem/6.png" alt="")
+                div(class="mt-5 grid grid-cols-2 gap-5 text-base lg:text-xl")
+                    ul()
+                        li() квартАл
+                        li() свЁкла
+                        li() звонИт
+                        li() газопровОд
+                        li() стирАльный
+                        li() избаловАть
+                        li() жалюзИ
+                        li() договОр
+                        li() новорождЁнный
+                        li() осуждЁнный
+                        li() включИшь
+                        li() срЕдства
+                        li() решИм
+                        li() ходАтайство
+                        li() обеспЕчение
+                        li() красИвее
+                        li() диспансЕр
+                    ul()
+                        li договор<u>ы</u>
+                        li бухгалтер<u>ы</u>
+                        li директор<u>а</u>
+                        li тренер<u>ы</u>
+                        li крем<u>ы</u>
+                        li помидор<u>ов</u>
+                        li яблок<u></u>
+                        li пара сапог<u></u>
+                        li пара носк<u>ов</u>
+                        li нет ясл<u>ей</u>
+                        li нет вафель<u></u>
+                        li нет свеч<u>ей</u>
+                        li нет очистк<u>ов</u>
+                        li нет туфель<u></u>
+                        li нет джинс<u>ов</u>
+                        li в об<u>е</u>их руках
+                        li хорош<u>ий</u> шампунь
+                        li бел<u>ый</u> тюль
+                        li килограмм мандарин<u>ов</u>
+        div(class="px-5 py-10 mx-auto max-w-[760px]") 
+            div(class="text-[38px] lg:text-[42px] text-center font-black") Таким образом,
+            div(class="mt-5 space-y-10")
+                div(class="flex items-center")
+                    div(class="")
+                        svg(class="w-[40px] h-[40px] lg:w-[55px] lg:h-[55px]" role='presentation' fill='#1f5bff' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 31.8 31.8')
+                            path(d='M.9 14.5C5.2 19.4 9.8 24 14.1 29c.4.5 1.3.3 1.6-.2 5.1-8.4 10.1-16.8 15-25.4.7-1.2-.5-2.1-1.3-.9C19.3 18 19 18.4 13.9 26.7c.5-.1 1.1-.1 1.6-.2-4.4-4.8-8.9-8.6-13.9-12.8-.4-.4-1.1.3-.7.8z')
+                    div(class="ml-5 text-lg font-bold") Большая часть опрошенных кировчан замечает происходящие в языке изменения
+                div(class="flex items-center")
+                    div(class="")
+                        svg(class="w-[40px] h-[40px] lg:w-[55px] lg:h-[55px]" role='presentation' fill='#1f5bff' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 31.8 31.8')
+                            path(d='M.9 14.5C5.2 19.4 9.8 24 14.1 29c.4.5 1.3.3 1.6-.2 5.1-8.4 10.1-16.8 15-25.4.7-1.2-.5-2.1-1.3-.9C19.3 18 19 18.4 13.9 26.7c.5-.1 1.1-.1 1.6-.2-4.4-4.8-8.9-8.6-13.9-12.8-.4-.4-1.1.3-.7.8z')
+                    div(class="ml-5 text-lg font-bold") Люди размышляют над причинами распространения в языке различных отрицательных явлений, при этом четко осознают личную ответственность за то, во что превращается язык
+                div(class="flex items-center")
+                    div(class="")
+                        svg(class="w-[40px] h-[40px] lg:w-[55px] lg:h-[55px]" role='presentation' fill='#1f5bff' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 31.8 31.8')
+                            path(d='M.9 14.5C5.2 19.4 9.8 24 14.1 29c.4.5 1.3.3 1.6-.2 5.1-8.4 10.1-16.8 15-25.4.7-1.2-.5-2.1-1.3-.9C19.3 18 19 18.4 13.9 26.7c.5-.1 1.1-.1 1.6-.2-4.4-4.8-8.9-8.6-13.9-12.8-.4-.4-1.1.3-.7.8z')
+                    div(class="ml-5 text-lg font-bold") Многие на деле стараются сделать свою речь лучше
+            div(class="mt-10 text-lg") Если люди пользуются языком осознанно, то ничего страшного, на наш взгляд, с языком произойти не может. Как отмечают лингвисты, многие процессы, которые сейчас наблюдаются в языке (напр., заимствование), являются естественными, проходят в нем всегда и необходимы для его собственного развития
+            div(class="")
+                div(class="text-[70px] text-center font-black") “
+                div(class="text-[26px] lg:text-[32px] text-center") Речевой хаос и расшатывание нормы плохи только с одной стороны. С другой стороны, порядку и строгой норме противостоят свобода и языковое творчество, своего рода языковой эксперимент: смешение стилей, жаргонов, отчасти языков… Фактически, это время зарождения новых языковых и речевых правил, период перехода от старой нормы к новой. Норма складывается, речь стабилизируется…
+                div(class="mt-5 text-center font-bold") — Максим Кронгауз
+            div(class="flex justify-center py-10 w-full")
+                div(class="h-[1px] w-full lg:w-[300px] bg-black")
+            div(class="text-[26px] lg:text-[32px] text-center") Только мы создаем язык будущего, который, конечно, будет несколько отличаться от языка прошлого, но тем не менее должен сохранить национальную специфику. А его красота и «качество» напрямую зависит от того, какие языковые средства мы выбираем в той или иной ситуации
+            div(class="flex justify-center py-10 w-full")
+                div(class="h-[1px] w-full lg:w-[300px] bg-black")
+            //- 
+            div(class="text-base italic grid grid-cols-1 lg:grid-cols-2 gap-y-10")
+                div() Неверно:
+                    ul(class="space-y-3")
+                        li Это играет большое значение
+                        li Мы спросили вопросы
+                        li Задача была осуществлена
+                        li Повышать кругозор
+                div(class="") Верно:
+                    ul(class="space-y-3")
+                        li Это <strong>имеет значение // играет роль</strong>
+                        li Мы <strong>задали вопросы</strong>
+                        li <strong>Задача решена // идея осуществлена</strong>
+                        li <strong>Расширять кругозор // повышать уровень знаний</strong>
+            //-
+            div()
+                div()
+                    div(class="mt-20 text-[38px] lg:text-[42px] text-center font-black") #РусскийДляВсех
+                    div(class="mt-5 text-[22px] text-center") проект, направленный на популяризацию русского языка.<br>Если вы хотите повысить уровень своей речевой культуры, расширить знания о языке, то
+                div(class="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-10")
+                    a(href="https://vk.com/club146582663" class="flex flex-col items-center space-y-5 text-center" target="_blank")
+                        div(class="w-[100px] h-[100px]")
+                            img(class="h-full w-full" src="/vyatsu-web/media/img/longreads/myegoteryaem/mini-logo.png")
+                        div(class="font-semibold text-[24px] lg:text-[30px]") Заходите в группу vk
+                        div(class="" ) https://vk.com/club146582663
+                    a(href="https://www.youtube.com/watch?v=jgz2VZ-GXqw" class="flex flex-col items-center space-y-5 text-center" target="_blank")
+                        div(class="w-[100px] h-[100px]")
+                            img(class="h-full w-full" src="/vyatsu-web/media/img/longreads/myegoteryaem/mini-logo.png")
+                        div(class="font-semibold text-[24px] lg:text-[30px]") Подписывайтесь на канал YouTube
+                        div(class="" ) https://www.youtube.com/watch?v=jgz2VZ-GXqw
+        //- 
+        div(class="px-5 py-10 mx-auto max-w-[960px] text-center flex flex-col space-y-10")
+            div(class="text-[22px] lg:text-[28px]") Новые выпуски #РусскийДляВсех выходят каждый месяц
+            iframe(class="aspect-video" src='https://www.youtube.com/embed/WxSufpBQFhM?si=STJAnmWbgs2yNTrC' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen)
+            iframe(class="aspect-video" src='https://www.youtube.com/embed/EWAboqUEr7A?si=m42MZVp8VOVfg8sD' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen)
+        //- 
+        div(class="flex flex-col items-center text-center p-5")
+            div(class="w-[300px] h-[300px]")
+                img(class="h-full w-full" src="/vyatsu-web/media/img/longreads/myegoteryaem/mini-logo.png")
+            div() 2017
+            a(href="mailto:olyakv1994@mail.ru") mail: olyakv1994@mail.ru
+        include ../../../templates/footer
