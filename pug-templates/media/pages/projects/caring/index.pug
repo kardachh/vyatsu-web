@@ -1,0 +1,78 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+        title #Неравнодушные и София Алексадрова
+        include ../../../templates/imports
+    body(class="bg-white font-media")
+        include ../../../templates/header
+        div(class="")
+            //- block #1
+            div(class="h-screen lg:h-[calc(100vh-80px)] lg:mt-[80px] flex items-center justify-center relative")
+                video(class="absolute h-full w-full object-cover " controlslist='nodownload noremoteplayback nodownload noremoteplayback' autoplay loop style='width: 100%; height: 100%;') 
+                    // TODO: сменить видео на необходимое
+                    source(src='https://prior2030.vyatsu.ru/react/main/assets/vsu_prioritet-site_%20cover-cH8kLvmm.mp4' type='video/mp4')
+                div(class="absolute h-full w-full bg-[#00000040]")
+                div(class="flex flex-col justify-center items-center z-10")
+                    div(class="text-white text-center text-[34px] lg:text-[70px] font-bold mt-10") #НЕРАВНОДУШНЫЕ
+                    div(class="text-white text-center text-[16px] lg:text-[18px] font-bold mt-10") Будь внимателен к миру, и мир будет внимателен к тебе
+            //- block #2
+            div(class="flex items-center justify-center relative")
+                div(class="py-[180px]")
+                    div(class="mx-auto max-w-[600px] px-5")
+                        div(class="mb-[40px] text-[30px] lg:text-[60px] font-bold text-center") О проекте
+                        div(class="max-w-[100px] w-full h-[3px] bg-black mx-auto")
+                        div(class="mt-[40px] text-[16px] lg:text-[18px] text-center ") Обратите внимание: неравнодушные к миру люди. <br> Многие стараются самореализоваться, принести какую-то пользу, быть «нужным» окружающим нас людям, но не каждого такого человека знают. Мы хотим, чтобы о неравнодушных людях слышали, говорили и знали.
+            //- block #3
+            div(class="py-[135px] px-5")
+                div(class="mx-auto max-w-[600px] mb-[40px] text-[30px] lg:text-[60px] font-bold text-center") Эпизоды
+                div(class="mx-auto max-w-[1200px] w-full grid grid-cols-1 lg:grid-cols-3 gap-5")
+                    a(href="#skvozpalcy" class="group min-h-[280px] border rounded-lg overflow-hidden relative")
+                        div(class="absolute h-full w-full top-0 left-0  bg-no-repeat bg-center bg-cover group-hover:scale-110 transition" style="background-image: url('/vyatsu-web/media/img/projects/neravnodushnie.jpeg'")
+                        div(class="absolute h-full w-full top-0 left-0 bg-[#00000080]")
+                        div(class="absolute h-full w-5/6 top-0 left-0")
+                            div(class="p-8 text-white text-[22px] font-bold") О тех, кто не смотрит «Сквозь пальцы»
+                        div(class="absolute h-full w-1/6 top-0 right-0 flex ")
+                            div(class="w-full pt-10 pl-4 text-white text-[22px] font-bold")
+                                svg.t959__card-arrow(role='presentation' width='14' height='24' viewBox='0 0 14 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                    path(d='M1 0.994385L12 11.9944L1 22.9944' stroke='white' stroke-width='2')
+                    a(href="#bashnya" class="group min-h-[280px] border rounded-lg overflow-hidden relative")
+                        div(class="absolute h-full w-full top-0 left-0  bg-no-repeat bg-center bg-cover group-hover:scale-110 transition" style="background-image: url('/vyatsu-web/media/img/projects/neravnodushnie-2.jpeg'")
+                        div(class="absolute h-full w-full top-0 left-0 bg-[#00000080]")
+                        div(class="absolute h-full w-5/6 top-0 left-0")
+                            div(class="p-8 text-white text-[22px] font-bold") История одного случая
+                        div(class="absolute h-full w-1/6 top-0 right-0 flex ")
+                            div(class="w-full pt-10 pl-4 text-white text-[22px] font-bold")
+                                svg.t959__card-arrow(role='presentation' width='14' height='24' viewBox='0 0 14 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                    path(d='M1 0.994385L12 11.9944L1 22.9944' stroke='white' stroke-width='2')
+                    a(href="" class="group min-h-[280px] border rounded-lg overflow-hidden relative")
+                        div(class="absolute h-full w-full top-0 left-0  bg-no-repeat bg-center bg-cover group-hover:scale-110 transition" style="background-image: url('/vyatsu-web/media/img/projects/neravnodushnie-3.jpeg'")
+                        div(class="absolute h-full w-full top-0 left-0 bg-[#00000080]")
+                        div(class="absolute h-full w-5/6 top-0 left-0")
+                            div(class="p-8 text-white text-[22px] font-bold") История одного случая
+                        div(class="absolute h-full w-1/6 top-0 right-0 flex ")
+                            div(class="w-full pt-10 pl-4 text-white text-[22px] font-bold")
+                                svg.t959__card-arrow(role='presentation' width='14' height='24' viewBox='0 0 14 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                    path(d='M1 0.994385L12 11.9944L1 22.9944' stroke='white' stroke-width='2')
+                        div(class="absolute w-full bottom-0 left-0")
+                            div(class="p-8 text-white text-[22px] font-bold") СКОРО
+            //- block #4
+            div(id="skvozpalcy" class="py-[135px] px-5")
+                div(class="")
+                    div(class="mx-auto max-w-[600px] px-5")
+                        div(class="text-[30px] lg:text-[60px] font-bold text-center") О тех, кто не смотрит «сквозь пальцы»
+                        div(class="pt-[50px] pb-[10px] text-[16px] lg:text-[18px] text-center ") Что-то мы замечаем каждый день. Что-то мы никогда не видели. А ещё есть вещи, которые мы видим каждый день, но стараемся не замечать. Автор фотопроекта и кураторы выставки «Сквозь пальцы» поделились с нами своими мыслями и рассказали о том, с чего всё началось.
+                div(class="mt-10 mx-auto max-w-[960px]")
+                    iframe(class="w-full aspect-video" src='https://www.youtube.com/embed/to388aB_DZo?si=NLIWV3k3mZCONQs5' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen)
+            //- block #5
+            div(id="bashnya" class="py-[135px] px-5")
+                div(class="")
+                    div(class="mx-auto max-w-[600px] px-5")
+                        div(class="text-[30px] lg:text-[60px] font-bold text-center") История одного случая
+                        div(class="pt-[50px] pb-[10px] text-[16px] lg:text-[18px] text-center ") Сколько же существует строений: от обычных жилых зданий до старинных замков. Их не щадят ни время, ни люди.
+                            br
+                            |18-метровая красавица в центре Слободского. Водонапорной башни, памятника архитектуры 20-го века, могло просто не существовать. Но не все и не всегда остаются равнодушными.
+                div(class="mt-10 mx-auto max-w-[960px]")
+                    iframe(class="w-full aspect-video" src='https://www.youtube.com/embed/R8xp752Jsdc?si=hOB-J1zspncnyxk0' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen)
+        include ../../../templates/footer
