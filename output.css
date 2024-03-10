@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -32,9 +32,11 @@
 4. Use the user's configured `sans` font-family by default.
 5. Use the user's configured `sans` font-feature-settings by default.
 6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
 */
 
-html {
+html,
+:host {
   line-height: 1.5;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -44,12 +46,14 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
   font-variation-settings: normal;
   /* 6 */
+  -webkit-tap-highlight-color: transparent;
+  /* 7 */
 }
 
 /*
@@ -121,8 +125,10 @@ strong {
 }
 
 /*
-1. Use the user's configured `mono` font family by default.
-2. Correct the odd `em` font sizing in all browsers.
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
 */
 
 code,
@@ -131,8 +137,12 @@ samp,
 pre {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   /* 1 */
-  font-size: 1em;
+  font-feature-settings: normal;
   /* 2 */
+  font-variation-settings: normal;
+  /* 3 */
+  font-size: 1em;
+  /* 4 */
 }
 
 /*
@@ -572,16 +582,8 @@ video {
   pointer-events: none;
 }
 
-.visible {
-  visibility: visible;
-}
-
 .invisible {
   visibility: hidden;
-}
-
-.static {
-  position: static;
 }
 
 .fixed {
@@ -592,16 +594,8 @@ video {
   position: absolute;
 }
 
-.\!relative {
-  position: relative !important;
-}
-
 .relative {
   position: relative;
-}
-
-.sticky {
-  position: sticky;
 }
 
 .inset-y-0 {
@@ -783,6 +777,11 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -805,6 +804,10 @@ video {
 
 .mb-5 {
   margin-bottom: 1.25rem;
+}
+
+.mb-\[40px\] {
+  margin-bottom: 40px;
 }
 
 .mb-\[50px\] {
@@ -891,16 +894,16 @@ video {
   margin-top: 2rem;
 }
 
+.mt-\[40px\] {
+  margin-top: 40px;
+}
+
 .block {
   display: block;
 }
 
 .flex {
   display: flex;
-}
-
-.table {
-  display: table;
 }
 
 .grid {
@@ -1100,6 +1103,10 @@ video {
   height: 100vh;
 }
 
+.h-\[3px\] {
+  height: 3px;
+}
+
 .max-h-0 {
   max-height: 0px;
 }
@@ -1265,6 +1272,10 @@ video {
   width: 100%;
 }
 
+.w-\[600px\] {
+  width: 600px;
+}
+
 .min-w-\[50px\] {
   min-width: 50px;
 }
@@ -1351,6 +1362,14 @@ video {
 
 .max-w-none {
   max-width: none;
+}
+
+.max-w-\[100\%\] {
+  max-width: 100%;
+}
+
+.max-w-\[600px\] {
+  max-width: 600px;
 }
 
 .flex-1 {
@@ -1671,12 +1690,6 @@ video {
 
 .overflow-x-hidden {
   overflow-x: hidden;
-}
-
-.truncate {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .whitespace-nowrap {
@@ -2163,6 +2176,11 @@ video {
   padding-bottom: 90px;
 }
 
+.py-\[135px\] {
+  padding-top: 135px;
+  padding-bottom: 135px;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -2421,10 +2439,6 @@ video {
   text-transform: uppercase;
 }
 
-.lowercase {
-  text-transform: lowercase;
-}
-
 .normal-case {
   text-transform: none;
 }
@@ -2623,10 +2637,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-\[\] {
-  color: ;
-}
-
 .underline {
   text-decoration-line: underline;
 }
@@ -2673,10 +2683,6 @@ video {
 
 .outline-\[\#8b4acc\] {
   outline-color: #8b4acc;
-}
-
-.filter {
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .transition {
@@ -3064,6 +3070,10 @@ html {
     height: auto;
   }
 
+  .lg\:h-\[calc\(100vh-360px\)\] {
+    height: calc(100vh - 360px);
+  }
+
   .lg\:max-h-\[280px\] {
     max-height: 280px;
   }
@@ -3318,6 +3328,10 @@ html {
     line-height: 1;
   }
 
+  .lg\:text-\[18px\] {
+    font-size: 18px;
+  }
+
   .lg\:text-\[20px\] {
     font-size: 20px;
   }
@@ -3374,12 +3388,20 @@ html {
     font-size: 54px;
   }
 
+  .lg\:text-\[60px\] {
+    font-size: 60px;
+  }
+
   .lg\:text-\[62px\] {
     font-size: 62px;
   }
 
   .lg\:text-\[64px\] {
     font-size: 64px;
+  }
+
+  .lg\:text-\[70px\] {
+    font-size: 70px;
   }
 
   .lg\:text-\[72px\] {
@@ -3475,5 +3497,11 @@ html {
 @media (min-width: 1536px) {
   .\32xl\:text-\[68px\] {
     font-size: 68px;
+  }
+}
+
+@media (forced-colors: active) {
+  .forced-colors\:hidden {
+    display: none;
   }
 }
